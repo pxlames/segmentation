@@ -1,0 +1,27 @@
+name: tissue
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.8.19
+  - numpy=1.24.3
+  - pandas=2.0.2
+  - pytorch=2.3.0
+  - torchvision=0.16.1
+  - cudatoolkit=11.8.0
+  - matplotlib=3.7.2
+  - opencv=4.6.0
+  - pip=24.0
+  - scipy=1.10.1
+  - keras=2.13.1       # 如果需要 Keras
+  - dgl=2.1.0          # 如果需要图神经网络
+  - torch-geometric=2.6.1  # 如果需要 PyTorch Geometric
+  - pytorch-lightning=1.5.0  # 如果需要 PyTorch Lightning
+  - lightning-utilities=0.11.6  # 如果需要 Lightning Utilities
+  - wandb=0.13.5        # 如果需要 Weights & Biases
+  - tqdm=4.65.2         # 如果需要进度条
+  - pip:
+    - torch==2.3.0 
+    - torchvision==0.18.0
+    - opencv-python==4.7.0.72
+    - torchaudio==2.3.0                  
