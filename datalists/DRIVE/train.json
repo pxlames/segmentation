@@ -1,0 +1,22 @@
+{
+    "common":{
+        "task": "train",
+        "num_classes":1,
+        "img_folder": "/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/data/DRIVE/training/images",
+        "gt_folder": "/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/data/DRIVE/training/1st_manual",
+        "checkpoint_restore":""
+        },
+    "train":{
+        "train_datalist":"/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/datalists/DRIVE/list-train.csv",
+        "validation_datalist":"/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/datalists/DRIVE/list-val.csv",
+        "crop_size":73,
+        "train_batch_size":4, 
+        "val_batch_size":2,
+        "output_folder":"/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/train-log/topo-DRIVE",
+        "learning_rate":0.0001,
+        "num_epochs":1200,
+        "save_every": 10,
+        "topo_weight":0.0001,
+        "topo_window":73
+    }
+}

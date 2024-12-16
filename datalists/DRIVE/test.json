@@ -1,0 +1,13 @@
+{
+    "common":{
+        "task": "test",
+        "num_classes":1,
+        "img_folder": "/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/data/DRIVE/test/images",
+        "gt_folder": "/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/data/DRIVE/test/1st_manual",
+        "checkpoint_restore":"/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/train-log/topo-DRIVE/model_best.pth"
+    },
+    "test":{
+        "test_datalist":"/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/datalists/DRIVE/list-test.csv",
+        "output_folder":"/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/inference-output/topo-DRIVE-skeletonloss"
+    }
+}

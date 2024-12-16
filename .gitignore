@@ -1,0 +1,19 @@
+*npy
+model_epoch*
+__pycache__/*
+wandb
+
+# Virtual environment
+venv/
+env/
+# IDE-specific files
+.idea/
+.vscode/
+# Logs and temporary files
+*.log
+*.tmp
+
+# data & outout
+data/
+inference-output/
+train-log/
