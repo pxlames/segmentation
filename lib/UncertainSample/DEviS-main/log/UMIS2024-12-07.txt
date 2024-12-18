@@ -1,0 +1,3239 @@
+2024-12-07 19:26:55 ===> re-training!!!
+2024-12-07 19:26:55 ===> ===========>Test begining!===========
+2024-12-07 19:26:55 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:26:55 ===> user=name of user
+2024-12-07 19:26:55 ===> experiment=UMIS
+2024-12-07 19:26:55 ===> date=2024-12-07
+2024-12-07 19:26:55 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:26:55 ===> start_epoch=1
+2024-12-07 19:26:55 ===> end_epochs=500
+2024-12-07 19:26:55 ===> submission=./results
+2024-12-07 19:26:55 ===> lambda_epochs=50
+2024-12-07 19:26:55 ===> save_freq=5
+2024-12-07 19:26:55 ===> lr=0.002
+2024-12-07 19:26:55 ===> savepath=./results/plot/output
+2024-12-07 19:26:55 ===> save_dir=./results
+2024-12-07 19:26:55 ===> mode=test
+2024-12-07 19:26:55 ===> dataset=DRIVE
+2024-12-07 19:26:55 ===> folder=folder0
+2024-12-07 19:26:55 ===> input_H=240
+2024-12-07 19:26:55 ===> input_W=240
+2024-12-07 19:26:55 ===> input_D=160
+2024-12-07 19:26:55 ===> crop_H=128
+2024-12-07 19:26:55 ===> crop_W=128
+2024-12-07 19:26:55 ===> crop_D=128
+2024-12-07 19:26:55 ===> output_D=155
+2024-12-07 19:26:55 ===> batch_size=2
+2024-12-07 19:26:55 ===> OOD_Condition=noise
+2024-12-07 19:26:55 ===> OOD_Level=1
+2024-12-07 19:26:55 ===> snapshot=True
+2024-12-07 19:26:55 ===> Uncertainty_Loss=True
+2024-12-07 19:26:55 ===> input_modality=four
+2024-12-07 19:26:55 ===> model_name=U
+2024-12-07 19:26:55 ===> test_epoch=112
+2024-12-07 19:26:55 ===> device=cpu
+2024-12-07 19:26:55 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:26:55 ===> aug_smooth=False
+2024-12-07 19:26:55 ===> eigen_smooth=False
+2024-12-07 19:26:55 ===> method=gradcam
+2024-12-07 19:26:55 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:26:55 ===> num_classes=2
+2024-12-07 19:26:55 ===> out_size=(584, 565)
+2024-12-07 19:26:55 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:26:55 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:42 ===> Single sample test time consumption 41.44 seconds!
+2024-12-07 19:27:42 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:27:43 ===> Single sample test time consumption 0.06 seconds!
+2024-12-07 19:27:43 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:27:43 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:27:43 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:27:43 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:27:44 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 19:27:44 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:44 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:27:44 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:27:44 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:27:44 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:27:44 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:27:44 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:27:44 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:27:44 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:27:44 ===> ===========>Test begining!===========
+2024-12-07 19:27:44 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:27:44 ===> user=name of user
+2024-12-07 19:27:44 ===> experiment=UMIS
+2024-12-07 19:27:44 ===> date=2024-12-07
+2024-12-07 19:27:44 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:44 ===> start_epoch=112
+2024-12-07 19:27:44 ===> end_epochs=500
+2024-12-07 19:27:44 ===> submission=./results
+2024-12-07 19:27:44 ===> lambda_epochs=50
+2024-12-07 19:27:44 ===> save_freq=5
+2024-12-07 19:27:44 ===> lr=0.002
+2024-12-07 19:27:44 ===> savepath=./results/plot/output
+2024-12-07 19:27:44 ===> save_dir=./results
+2024-12-07 19:27:44 ===> mode=test
+2024-12-07 19:27:44 ===> dataset=DRIVE
+2024-12-07 19:27:44 ===> folder=folder0
+2024-12-07 19:27:44 ===> input_H=240
+2024-12-07 19:27:44 ===> input_W=240
+2024-12-07 19:27:44 ===> input_D=160
+2024-12-07 19:27:44 ===> crop_H=128
+2024-12-07 19:27:44 ===> crop_W=128
+2024-12-07 19:27:44 ===> crop_D=128
+2024-12-07 19:27:44 ===> output_D=155
+2024-12-07 19:27:44 ===> batch_size=2
+2024-12-07 19:27:44 ===> OOD_Condition=noise
+2024-12-07 19:27:44 ===> OOD_Level=2
+2024-12-07 19:27:44 ===> snapshot=True
+2024-12-07 19:27:44 ===> Uncertainty_Loss=True
+2024-12-07 19:27:44 ===> input_modality=four
+2024-12-07 19:27:44 ===> model_name=U
+2024-12-07 19:27:44 ===> test_epoch=112
+2024-12-07 19:27:44 ===> device=cpu
+2024-12-07 19:27:44 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:27:44 ===> aug_smooth=False
+2024-12-07 19:27:44 ===> eigen_smooth=False
+2024-12-07 19:27:44 ===> method=gradcam
+2024-12-07 19:27:44 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:27:44 ===> num_classes=2
+2024-12-07 19:27:44 ===> out_size=(584, 565)
+2024-12-07 19:27:44 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:27:44 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:45 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:27:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:45 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:27:45 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:27:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:46 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:46 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:46 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:46 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:27:46 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:27:46 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:27:46 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:27:46 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:27:46 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:27:46 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:27:46 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:27:46 ===> ===========>Test begining!===========
+2024-12-07 19:27:46 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:27:46 ===> user=name of user
+2024-12-07 19:27:46 ===> experiment=UMIS
+2024-12-07 19:27:46 ===> date=2024-12-07
+2024-12-07 19:27:46 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:46 ===> start_epoch=112
+2024-12-07 19:27:46 ===> end_epochs=500
+2024-12-07 19:27:46 ===> submission=./results
+2024-12-07 19:27:46 ===> lambda_epochs=50
+2024-12-07 19:27:46 ===> save_freq=5
+2024-12-07 19:27:46 ===> lr=0.002
+2024-12-07 19:27:46 ===> savepath=./results/plot/output
+2024-12-07 19:27:46 ===> save_dir=./results
+2024-12-07 19:27:46 ===> mode=test
+2024-12-07 19:27:46 ===> dataset=DRIVE
+2024-12-07 19:27:46 ===> folder=folder0
+2024-12-07 19:27:46 ===> input_H=240
+2024-12-07 19:27:46 ===> input_W=240
+2024-12-07 19:27:46 ===> input_D=160
+2024-12-07 19:27:46 ===> crop_H=128
+2024-12-07 19:27:46 ===> crop_W=128
+2024-12-07 19:27:46 ===> crop_D=128
+2024-12-07 19:27:46 ===> output_D=155
+2024-12-07 19:27:46 ===> batch_size=2
+2024-12-07 19:27:46 ===> OOD_Condition=noise
+2024-12-07 19:27:46 ===> OOD_Level=3
+2024-12-07 19:27:46 ===> snapshot=True
+2024-12-07 19:27:46 ===> Uncertainty_Loss=True
+2024-12-07 19:27:46 ===> input_modality=four
+2024-12-07 19:27:46 ===> model_name=U
+2024-12-07 19:27:46 ===> test_epoch=112
+2024-12-07 19:27:46 ===> device=cpu
+2024-12-07 19:27:46 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:27:46 ===> aug_smooth=False
+2024-12-07 19:27:46 ===> eigen_smooth=False
+2024-12-07 19:27:46 ===> method=gradcam
+2024-12-07 19:27:46 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:27:46 ===> num_classes=2
+2024-12-07 19:27:46 ===> out_size=(584, 565)
+2024-12-07 19:27:46 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:27:46 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:46 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:46 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:46 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:27:46 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:46 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:46 ===> Single sample test time consumption 0.03 seconds!
+2024-12-07 19:27:46 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:47 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:47 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:47 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:27:47 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:27:47 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:27:47 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:27:47 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:27:47 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:27:47 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:27:47 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:27:47 ===> ===========>Test begining!===========
+2024-12-07 19:27:47 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:27:47 ===> user=name of user
+2024-12-07 19:27:47 ===> experiment=UMIS
+2024-12-07 19:27:47 ===> date=2024-12-07
+2024-12-07 19:27:47 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:47 ===> start_epoch=112
+2024-12-07 19:27:47 ===> end_epochs=500
+2024-12-07 19:27:47 ===> submission=./results
+2024-12-07 19:27:47 ===> lambda_epochs=50
+2024-12-07 19:27:47 ===> save_freq=5
+2024-12-07 19:27:47 ===> lr=0.002
+2024-12-07 19:27:47 ===> savepath=./results/plot/output
+2024-12-07 19:27:47 ===> save_dir=./results
+2024-12-07 19:27:47 ===> mode=test
+2024-12-07 19:27:47 ===> dataset=DRIVE
+2024-12-07 19:27:47 ===> folder=folder0
+2024-12-07 19:27:47 ===> input_H=240
+2024-12-07 19:27:47 ===> input_W=240
+2024-12-07 19:27:47 ===> input_D=160
+2024-12-07 19:27:47 ===> crop_H=128
+2024-12-07 19:27:47 ===> crop_W=128
+2024-12-07 19:27:47 ===> crop_D=128
+2024-12-07 19:27:47 ===> output_D=155
+2024-12-07 19:27:47 ===> batch_size=2
+2024-12-07 19:27:47 ===> OOD_Condition=blur
+2024-12-07 19:27:47 ===> OOD_Level=1
+2024-12-07 19:27:47 ===> snapshot=True
+2024-12-07 19:27:47 ===> Uncertainty_Loss=True
+2024-12-07 19:27:47 ===> input_modality=four
+2024-12-07 19:27:47 ===> model_name=U
+2024-12-07 19:27:47 ===> test_epoch=112
+2024-12-07 19:27:47 ===> device=cpu
+2024-12-07 19:27:47 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:27:47 ===> aug_smooth=False
+2024-12-07 19:27:47 ===> eigen_smooth=False
+2024-12-07 19:27:47 ===> method=gradcam
+2024-12-07 19:27:47 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:27:47 ===> num_classes=2
+2024-12-07 19:27:47 ===> out_size=(584, 565)
+2024-12-07 19:27:47 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:27:47 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:47 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:27:47 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:47 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:47 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:27:47 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:47 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:47 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:48 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:27:48 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:27:48 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:27:48 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:27:48 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:27:48 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:27:48 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:27:48 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:27:48 ===> ===========>Test begining!===========
+2024-12-07 19:27:48 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:27:48 ===> user=name of user
+2024-12-07 19:27:48 ===> experiment=UMIS
+2024-12-07 19:27:48 ===> date=2024-12-07
+2024-12-07 19:27:48 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:48 ===> start_epoch=112
+2024-12-07 19:27:48 ===> end_epochs=500
+2024-12-07 19:27:48 ===> submission=./results
+2024-12-07 19:27:48 ===> lambda_epochs=50
+2024-12-07 19:27:48 ===> save_freq=5
+2024-12-07 19:27:48 ===> lr=0.002
+2024-12-07 19:27:48 ===> savepath=./results/plot/output
+2024-12-07 19:27:48 ===> save_dir=./results
+2024-12-07 19:27:48 ===> mode=test
+2024-12-07 19:27:48 ===> dataset=DRIVE
+2024-12-07 19:27:48 ===> folder=folder0
+2024-12-07 19:27:48 ===> input_H=240
+2024-12-07 19:27:48 ===> input_W=240
+2024-12-07 19:27:48 ===> input_D=160
+2024-12-07 19:27:48 ===> crop_H=128
+2024-12-07 19:27:48 ===> crop_W=128
+2024-12-07 19:27:48 ===> crop_D=128
+2024-12-07 19:27:48 ===> output_D=155
+2024-12-07 19:27:48 ===> batch_size=2
+2024-12-07 19:27:48 ===> OOD_Condition=blur
+2024-12-07 19:27:48 ===> OOD_Level=2
+2024-12-07 19:27:48 ===> snapshot=True
+2024-12-07 19:27:48 ===> Uncertainty_Loss=True
+2024-12-07 19:27:48 ===> input_modality=four
+2024-12-07 19:27:48 ===> model_name=U
+2024-12-07 19:27:48 ===> test_epoch=112
+2024-12-07 19:27:48 ===> device=cpu
+2024-12-07 19:27:48 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:27:48 ===> aug_smooth=False
+2024-12-07 19:27:48 ===> eigen_smooth=False
+2024-12-07 19:27:48 ===> method=gradcam
+2024-12-07 19:27:48 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:27:48 ===> num_classes=2
+2024-12-07 19:27:48 ===> out_size=(584, 565)
+2024-12-07 19:27:48 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:27:48 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:48 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:49 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:27:49 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:27:49 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:27:49 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:27:49 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:27:49 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:27:49 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:27:49 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:27:49 ===> ===========>Test begining!===========
+2024-12-07 19:27:49 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:27:49 ===> user=name of user
+2024-12-07 19:27:49 ===> experiment=UMIS
+2024-12-07 19:27:49 ===> date=2024-12-07
+2024-12-07 19:27:49 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:49 ===> start_epoch=112
+2024-12-07 19:27:49 ===> end_epochs=500
+2024-12-07 19:27:49 ===> submission=./results
+2024-12-07 19:27:49 ===> lambda_epochs=50
+2024-12-07 19:27:49 ===> save_freq=5
+2024-12-07 19:27:49 ===> lr=0.002
+2024-12-07 19:27:49 ===> savepath=./results/plot/output
+2024-12-07 19:27:49 ===> save_dir=./results
+2024-12-07 19:27:49 ===> mode=test
+2024-12-07 19:27:49 ===> dataset=DRIVE
+2024-12-07 19:27:49 ===> folder=folder0
+2024-12-07 19:27:49 ===> input_H=240
+2024-12-07 19:27:49 ===> input_W=240
+2024-12-07 19:27:49 ===> input_D=160
+2024-12-07 19:27:49 ===> crop_H=128
+2024-12-07 19:27:49 ===> crop_W=128
+2024-12-07 19:27:49 ===> crop_D=128
+2024-12-07 19:27:49 ===> output_D=155
+2024-12-07 19:27:49 ===> batch_size=2
+2024-12-07 19:27:49 ===> OOD_Condition=blur
+2024-12-07 19:27:49 ===> OOD_Level=3
+2024-12-07 19:27:49 ===> snapshot=True
+2024-12-07 19:27:49 ===> Uncertainty_Loss=True
+2024-12-07 19:27:49 ===> input_modality=four
+2024-12-07 19:27:49 ===> model_name=U
+2024-12-07 19:27:49 ===> test_epoch=112
+2024-12-07 19:27:49 ===> device=cpu
+2024-12-07 19:27:49 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:27:49 ===> aug_smooth=False
+2024-12-07 19:27:49 ===> eigen_smooth=False
+2024-12-07 19:27:49 ===> method=gradcam
+2024-12-07 19:27:49 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:27:49 ===> num_classes=2
+2024-12-07 19:27:49 ===> out_size=(584, 565)
+2024-12-07 19:27:49 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:27:49 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:27:49 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:27:49 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:27:49 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:27:49 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:27:49 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 19:27:49 ===> Single sample test time consumption 0.03 seconds!
+2024-12-07 19:27:50 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:27:50 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:50 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:27:50 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:27:50 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:27:50 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:27:50 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:27:50 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:27:50 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:27:50 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:27:50 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:32:49 ===> re-training!!!
+2024-12-07 19:32:49 ===> ===========>Test begining!===========
+2024-12-07 19:32:49 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:32:49 ===> user=name of user
+2024-12-07 19:32:49 ===> experiment=UMIS
+2024-12-07 19:32:49 ===> date=2024-12-07
+2024-12-07 19:32:49 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:32:49 ===> start_epoch=1
+2024-12-07 19:32:49 ===> end_epochs=500
+2024-12-07 19:32:49 ===> submission=./results
+2024-12-07 19:32:49 ===> lambda_epochs=50
+2024-12-07 19:32:49 ===> save_freq=5
+2024-12-07 19:32:49 ===> lr=0.002
+2024-12-07 19:32:49 ===> savepath=./results/plot/output
+2024-12-07 19:32:49 ===> save_dir=./results
+2024-12-07 19:32:49 ===> mode=test
+2024-12-07 19:32:49 ===> dataset=DRIVE
+2024-12-07 19:32:49 ===> folder=folder0
+2024-12-07 19:32:49 ===> input_H=240
+2024-12-07 19:32:49 ===> input_W=240
+2024-12-07 19:32:49 ===> input_D=160
+2024-12-07 19:32:49 ===> crop_H=128
+2024-12-07 19:32:49 ===> crop_W=128
+2024-12-07 19:32:49 ===> crop_D=128
+2024-12-07 19:32:49 ===> output_D=155
+2024-12-07 19:32:49 ===> batch_size=2
+2024-12-07 19:32:49 ===> OOD_Condition=noise
+2024-12-07 19:32:49 ===> OOD_Level=1
+2024-12-07 19:32:49 ===> snapshot=True
+2024-12-07 19:32:49 ===> Uncertainty_Loss=True
+2024-12-07 19:32:49 ===> input_modality=four
+2024-12-07 19:32:49 ===> model_name=U
+2024-12-07 19:32:49 ===> test_epoch=112
+2024-12-07 19:32:49 ===> device=cpu
+2024-12-07 19:32:49 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:32:49 ===> aug_smooth=False
+2024-12-07 19:32:49 ===> eigen_smooth=False
+2024-12-07 19:32:49 ===> method=gradcam
+2024-12-07 19:32:49 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:32:49 ===> num_classes=2
+2024-12-07 19:32:49 ===> out_size=(584, 565)
+2024-12-07 19:32:49 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:32:49 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:29 ===> Single sample test time consumption 39.76 seconds!
+2024-12-07 19:33:30 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:33:30 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:31 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:31 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:31 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:31 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:31 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:33:32 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:32 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:33:32 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:33:32 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:33:32 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:33:32 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:33:32 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:33:32 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:33:32 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:33:32 ===> ===========>Test begining!===========
+2024-12-07 19:33:32 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:33:32 ===> user=name of user
+2024-12-07 19:33:32 ===> experiment=UMIS
+2024-12-07 19:33:32 ===> date=2024-12-07
+2024-12-07 19:33:32 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:32 ===> start_epoch=112
+2024-12-07 19:33:32 ===> end_epochs=500
+2024-12-07 19:33:32 ===> submission=./results
+2024-12-07 19:33:32 ===> lambda_epochs=50
+2024-12-07 19:33:32 ===> save_freq=5
+2024-12-07 19:33:32 ===> lr=0.002
+2024-12-07 19:33:32 ===> savepath=./results/plot/output
+2024-12-07 19:33:32 ===> save_dir=./results
+2024-12-07 19:33:32 ===> mode=test
+2024-12-07 19:33:32 ===> dataset=DRIVE
+2024-12-07 19:33:32 ===> folder=folder0
+2024-12-07 19:33:32 ===> input_H=240
+2024-12-07 19:33:32 ===> input_W=240
+2024-12-07 19:33:32 ===> input_D=160
+2024-12-07 19:33:32 ===> crop_H=128
+2024-12-07 19:33:32 ===> crop_W=128
+2024-12-07 19:33:32 ===> crop_D=128
+2024-12-07 19:33:32 ===> output_D=155
+2024-12-07 19:33:32 ===> batch_size=2
+2024-12-07 19:33:32 ===> OOD_Condition=noise
+2024-12-07 19:33:32 ===> OOD_Level=2
+2024-12-07 19:33:32 ===> snapshot=True
+2024-12-07 19:33:32 ===> Uncertainty_Loss=True
+2024-12-07 19:33:32 ===> input_modality=four
+2024-12-07 19:33:32 ===> model_name=U
+2024-12-07 19:33:32 ===> test_epoch=112
+2024-12-07 19:33:32 ===> device=cpu
+2024-12-07 19:33:32 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:33:32 ===> aug_smooth=False
+2024-12-07 19:33:32 ===> eigen_smooth=False
+2024-12-07 19:33:32 ===> method=gradcam
+2024-12-07 19:33:32 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:33:32 ===> num_classes=2
+2024-12-07 19:33:32 ===> out_size=(584, 565)
+2024-12-07 19:33:32 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:33:32 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:32 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:32 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:32 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:32 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:32 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:33 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:33:33 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:33:33 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:33:33 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:33:33 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:33:33 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:33:33 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:33:33 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:33:33 ===> ===========>Test begining!===========
+2024-12-07 19:33:33 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:33:33 ===> user=name of user
+2024-12-07 19:33:33 ===> experiment=UMIS
+2024-12-07 19:33:33 ===> date=2024-12-07
+2024-12-07 19:33:33 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:33 ===> start_epoch=112
+2024-12-07 19:33:33 ===> end_epochs=500
+2024-12-07 19:33:33 ===> submission=./results
+2024-12-07 19:33:33 ===> lambda_epochs=50
+2024-12-07 19:33:33 ===> save_freq=5
+2024-12-07 19:33:33 ===> lr=0.002
+2024-12-07 19:33:33 ===> savepath=./results/plot/output
+2024-12-07 19:33:33 ===> save_dir=./results
+2024-12-07 19:33:33 ===> mode=test
+2024-12-07 19:33:33 ===> dataset=DRIVE
+2024-12-07 19:33:33 ===> folder=folder0
+2024-12-07 19:33:33 ===> input_H=240
+2024-12-07 19:33:33 ===> input_W=240
+2024-12-07 19:33:33 ===> input_D=160
+2024-12-07 19:33:33 ===> crop_H=128
+2024-12-07 19:33:33 ===> crop_W=128
+2024-12-07 19:33:33 ===> crop_D=128
+2024-12-07 19:33:33 ===> output_D=155
+2024-12-07 19:33:33 ===> batch_size=2
+2024-12-07 19:33:33 ===> OOD_Condition=noise
+2024-12-07 19:33:33 ===> OOD_Level=3
+2024-12-07 19:33:33 ===> snapshot=True
+2024-12-07 19:33:33 ===> Uncertainty_Loss=True
+2024-12-07 19:33:33 ===> input_modality=four
+2024-12-07 19:33:33 ===> model_name=U
+2024-12-07 19:33:33 ===> test_epoch=112
+2024-12-07 19:33:33 ===> device=cpu
+2024-12-07 19:33:33 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:33:33 ===> aug_smooth=False
+2024-12-07 19:33:33 ===> eigen_smooth=False
+2024-12-07 19:33:33 ===> method=gradcam
+2024-12-07 19:33:33 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:33:33 ===> num_classes=2
+2024-12-07 19:33:33 ===> out_size=(584, 565)
+2024-12-07 19:33:33 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:33:33 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:34 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:33:34 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:33:34 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 19:33:34 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 19:33:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:34 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:33:34 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:33:34 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:33:34 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:33:34 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:33:34 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:33:34 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:33:34 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:33:34 ===> ===========>Test begining!===========
+2024-12-07 19:33:34 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:33:34 ===> user=name of user
+2024-12-07 19:33:34 ===> experiment=UMIS
+2024-12-07 19:33:34 ===> date=2024-12-07
+2024-12-07 19:33:34 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:34 ===> start_epoch=112
+2024-12-07 19:33:34 ===> end_epochs=500
+2024-12-07 19:33:34 ===> submission=./results
+2024-12-07 19:33:34 ===> lambda_epochs=50
+2024-12-07 19:33:34 ===> save_freq=5
+2024-12-07 19:33:34 ===> lr=0.002
+2024-12-07 19:33:34 ===> savepath=./results/plot/output
+2024-12-07 19:33:34 ===> save_dir=./results
+2024-12-07 19:33:34 ===> mode=test
+2024-12-07 19:33:34 ===> dataset=DRIVE
+2024-12-07 19:33:34 ===> folder=folder0
+2024-12-07 19:33:34 ===> input_H=240
+2024-12-07 19:33:34 ===> input_W=240
+2024-12-07 19:33:34 ===> input_D=160
+2024-12-07 19:33:34 ===> crop_H=128
+2024-12-07 19:33:34 ===> crop_W=128
+2024-12-07 19:33:34 ===> crop_D=128
+2024-12-07 19:33:34 ===> output_D=155
+2024-12-07 19:33:34 ===> batch_size=2
+2024-12-07 19:33:34 ===> OOD_Condition=blur
+2024-12-07 19:33:34 ===> OOD_Level=1
+2024-12-07 19:33:34 ===> snapshot=True
+2024-12-07 19:33:34 ===> Uncertainty_Loss=True
+2024-12-07 19:33:34 ===> input_modality=four
+2024-12-07 19:33:34 ===> model_name=U
+2024-12-07 19:33:34 ===> test_epoch=112
+2024-12-07 19:33:34 ===> device=cpu
+2024-12-07 19:33:34 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:33:34 ===> aug_smooth=False
+2024-12-07 19:33:34 ===> eigen_smooth=False
+2024-12-07 19:33:34 ===> method=gradcam
+2024-12-07 19:33:34 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:33:34 ===> num_classes=2
+2024-12-07 19:33:34 ===> out_size=(584, 565)
+2024-12-07 19:33:34 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:33:34 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:35 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 19:33:35 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:33:35 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:33:35 ===> Single sample test time consumption 0.10 seconds!
+2024-12-07 19:33:36 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:33:36 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:33:36 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:33:36 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:33:36 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:33:36 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:33:36 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:33:36 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:33:36 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:33:36 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:33:36 ===> ===========>Test begining!===========
+2024-12-07 19:33:36 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:33:36 ===> user=name of user
+2024-12-07 19:33:36 ===> experiment=UMIS
+2024-12-07 19:33:36 ===> date=2024-12-07
+2024-12-07 19:33:36 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:36 ===> start_epoch=112
+2024-12-07 19:33:36 ===> end_epochs=500
+2024-12-07 19:33:36 ===> submission=./results
+2024-12-07 19:33:36 ===> lambda_epochs=50
+2024-12-07 19:33:36 ===> save_freq=5
+2024-12-07 19:33:36 ===> lr=0.002
+2024-12-07 19:33:36 ===> savepath=./results/plot/output
+2024-12-07 19:33:36 ===> save_dir=./results
+2024-12-07 19:33:36 ===> mode=test
+2024-12-07 19:33:36 ===> dataset=DRIVE
+2024-12-07 19:33:36 ===> folder=folder0
+2024-12-07 19:33:36 ===> input_H=240
+2024-12-07 19:33:36 ===> input_W=240
+2024-12-07 19:33:36 ===> input_D=160
+2024-12-07 19:33:36 ===> crop_H=128
+2024-12-07 19:33:36 ===> crop_W=128
+2024-12-07 19:33:36 ===> crop_D=128
+2024-12-07 19:33:36 ===> output_D=155
+2024-12-07 19:33:36 ===> batch_size=2
+2024-12-07 19:33:36 ===> OOD_Condition=blur
+2024-12-07 19:33:36 ===> OOD_Level=2
+2024-12-07 19:33:36 ===> snapshot=True
+2024-12-07 19:33:36 ===> Uncertainty_Loss=True
+2024-12-07 19:33:36 ===> input_modality=four
+2024-12-07 19:33:36 ===> model_name=U
+2024-12-07 19:33:36 ===> test_epoch=112
+2024-12-07 19:33:36 ===> device=cpu
+2024-12-07 19:33:36 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:33:36 ===> aug_smooth=False
+2024-12-07 19:33:36 ===> eigen_smooth=False
+2024-12-07 19:33:36 ===> method=gradcam
+2024-12-07 19:33:36 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:33:36 ===> num_classes=2
+2024-12-07 19:33:36 ===> out_size=(584, 565)
+2024-12-07 19:33:36 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:33:36 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:37 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:33:37 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:33:37 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:33:37 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:33:37 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:33:37 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:33:37 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:33:37 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:33:37 ===> ===========>Test begining!===========
+2024-12-07 19:33:37 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:33:37 ===> user=name of user
+2024-12-07 19:33:37 ===> experiment=UMIS
+2024-12-07 19:33:37 ===> date=2024-12-07
+2024-12-07 19:33:37 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:37 ===> start_epoch=112
+2024-12-07 19:33:37 ===> end_epochs=500
+2024-12-07 19:33:37 ===> submission=./results
+2024-12-07 19:33:37 ===> lambda_epochs=50
+2024-12-07 19:33:37 ===> save_freq=5
+2024-12-07 19:33:37 ===> lr=0.002
+2024-12-07 19:33:37 ===> savepath=./results/plot/output
+2024-12-07 19:33:37 ===> save_dir=./results
+2024-12-07 19:33:37 ===> mode=test
+2024-12-07 19:33:37 ===> dataset=DRIVE
+2024-12-07 19:33:37 ===> folder=folder0
+2024-12-07 19:33:37 ===> input_H=240
+2024-12-07 19:33:37 ===> input_W=240
+2024-12-07 19:33:37 ===> input_D=160
+2024-12-07 19:33:37 ===> crop_H=128
+2024-12-07 19:33:37 ===> crop_W=128
+2024-12-07 19:33:37 ===> crop_D=128
+2024-12-07 19:33:37 ===> output_D=155
+2024-12-07 19:33:37 ===> batch_size=2
+2024-12-07 19:33:37 ===> OOD_Condition=blur
+2024-12-07 19:33:37 ===> OOD_Level=3
+2024-12-07 19:33:37 ===> snapshot=True
+2024-12-07 19:33:37 ===> Uncertainty_Loss=True
+2024-12-07 19:33:37 ===> input_modality=four
+2024-12-07 19:33:37 ===> model_name=U
+2024-12-07 19:33:37 ===> test_epoch=112
+2024-12-07 19:33:37 ===> device=cpu
+2024-12-07 19:33:37 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:33:37 ===> aug_smooth=False
+2024-12-07 19:33:37 ===> eigen_smooth=False
+2024-12-07 19:33:37 ===> method=gradcam
+2024-12-07 19:33:37 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:33:37 ===> num_classes=2
+2024-12-07 19:33:37 ===> out_size=(584, 565)
+2024-12-07 19:33:37 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:33:37 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:33:37 ===> Single sample test time consumption 0.10 seconds!
+2024-12-07 19:33:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:33:38 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:33:38 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:33:38 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:33:38 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:33:38 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:33:38 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:33:38 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:33:38 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:36:00 ===> re-training!!!
+2024-12-07 19:36:00 ===> ===========>Test begining!===========
+2024-12-07 19:36:00 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:36:00 ===> user=name of user
+2024-12-07 19:36:00 ===> experiment=UMIS
+2024-12-07 19:36:00 ===> date=2024-12-07
+2024-12-07 19:36:00 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:00 ===> start_epoch=1
+2024-12-07 19:36:00 ===> end_epochs=500
+2024-12-07 19:36:00 ===> submission=./results
+2024-12-07 19:36:00 ===> lambda_epochs=50
+2024-12-07 19:36:00 ===> save_freq=5
+2024-12-07 19:36:00 ===> lr=0.002
+2024-12-07 19:36:00 ===> savepath=./results/plot/output
+2024-12-07 19:36:00 ===> save_dir=./results
+2024-12-07 19:36:00 ===> mode=test
+2024-12-07 19:36:00 ===> dataset=DRIVE
+2024-12-07 19:36:00 ===> folder=folder0
+2024-12-07 19:36:00 ===> input_H=240
+2024-12-07 19:36:00 ===> input_W=240
+2024-12-07 19:36:00 ===> input_D=160
+2024-12-07 19:36:00 ===> crop_H=128
+2024-12-07 19:36:00 ===> crop_W=128
+2024-12-07 19:36:00 ===> crop_D=128
+2024-12-07 19:36:00 ===> output_D=155
+2024-12-07 19:36:00 ===> batch_size=2
+2024-12-07 19:36:00 ===> OOD_Condition=noise
+2024-12-07 19:36:00 ===> OOD_Level=1
+2024-12-07 19:36:00 ===> snapshot=True
+2024-12-07 19:36:00 ===> Uncertainty_Loss=True
+2024-12-07 19:36:00 ===> input_modality=four
+2024-12-07 19:36:00 ===> model_name=U
+2024-12-07 19:36:00 ===> test_epoch=112
+2024-12-07 19:36:00 ===> device=cpu
+2024-12-07 19:36:00 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:36:00 ===> aug_smooth=False
+2024-12-07 19:36:00 ===> eigen_smooth=False
+2024-12-07 19:36:00 ===> method=gradcam
+2024-12-07 19:36:00 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:36:00 ===> num_classes=2
+2024-12-07 19:36:00 ===> out_size=(584, 565)
+2024-12-07 19:36:00 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:36:00 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:31 ===> Single sample test time consumption 30.90 seconds!
+2024-12-07 19:36:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:33 ===> Single sample test time consumption 0.03 seconds!
+2024-12-07 19:36:33 ===> Single sample test time consumption 0.06 seconds!
+2024-12-07 19:36:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:34 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:36:34 ===> Single sample test time consumption 0.03 seconds!
+2024-12-07 19:36:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:35 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:36:35 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:36:35 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:36:35 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:36:35 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:36:35 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:36:35 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:36:35 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:36:35 ===> ===========>Test begining!===========
+2024-12-07 19:36:35 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:36:35 ===> user=name of user
+2024-12-07 19:36:35 ===> experiment=UMIS
+2024-12-07 19:36:35 ===> date=2024-12-07
+2024-12-07 19:36:35 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:35 ===> start_epoch=112
+2024-12-07 19:36:35 ===> end_epochs=500
+2024-12-07 19:36:35 ===> submission=./results
+2024-12-07 19:36:35 ===> lambda_epochs=50
+2024-12-07 19:36:35 ===> save_freq=5
+2024-12-07 19:36:35 ===> lr=0.002
+2024-12-07 19:36:35 ===> savepath=./results/plot/output
+2024-12-07 19:36:35 ===> save_dir=./results
+2024-12-07 19:36:35 ===> mode=test
+2024-12-07 19:36:35 ===> dataset=DRIVE
+2024-12-07 19:36:35 ===> folder=folder0
+2024-12-07 19:36:35 ===> input_H=240
+2024-12-07 19:36:35 ===> input_W=240
+2024-12-07 19:36:35 ===> input_D=160
+2024-12-07 19:36:35 ===> crop_H=128
+2024-12-07 19:36:35 ===> crop_W=128
+2024-12-07 19:36:35 ===> crop_D=128
+2024-12-07 19:36:35 ===> output_D=155
+2024-12-07 19:36:35 ===> batch_size=2
+2024-12-07 19:36:35 ===> OOD_Condition=noise
+2024-12-07 19:36:35 ===> OOD_Level=2
+2024-12-07 19:36:35 ===> snapshot=True
+2024-12-07 19:36:35 ===> Uncertainty_Loss=True
+2024-12-07 19:36:35 ===> input_modality=four
+2024-12-07 19:36:35 ===> model_name=U
+2024-12-07 19:36:35 ===> test_epoch=112
+2024-12-07 19:36:35 ===> device=cpu
+2024-12-07 19:36:35 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:36:35 ===> aug_smooth=False
+2024-12-07 19:36:35 ===> eigen_smooth=False
+2024-12-07 19:36:35 ===> method=gradcam
+2024-12-07 19:36:35 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:36:35 ===> num_classes=2
+2024-12-07 19:36:35 ===> out_size=(584, 565)
+2024-12-07 19:36:35 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:36:35 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:36 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:36:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:36 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:36:36 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:36:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:36 ===> Single sample test time consumption 0.03 seconds!
+2024-12-07 19:36:36 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:36:36 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:36:36 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:36:36 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:36:36 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:36:36 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:36:36 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:36:36 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:36:36 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:36:36 ===> ===========>Test begining!===========
+2024-12-07 19:36:36 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:36:36 ===> user=name of user
+2024-12-07 19:36:36 ===> experiment=UMIS
+2024-12-07 19:36:36 ===> date=2024-12-07
+2024-12-07 19:36:36 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:36 ===> start_epoch=112
+2024-12-07 19:36:36 ===> end_epochs=500
+2024-12-07 19:36:36 ===> submission=./results
+2024-12-07 19:36:36 ===> lambda_epochs=50
+2024-12-07 19:36:36 ===> save_freq=5
+2024-12-07 19:36:36 ===> lr=0.002
+2024-12-07 19:36:36 ===> savepath=./results/plot/output
+2024-12-07 19:36:36 ===> save_dir=./results
+2024-12-07 19:36:36 ===> mode=test
+2024-12-07 19:36:36 ===> dataset=DRIVE
+2024-12-07 19:36:36 ===> folder=folder0
+2024-12-07 19:36:36 ===> input_H=240
+2024-12-07 19:36:36 ===> input_W=240
+2024-12-07 19:36:36 ===> input_D=160
+2024-12-07 19:36:36 ===> crop_H=128
+2024-12-07 19:36:36 ===> crop_W=128
+2024-12-07 19:36:36 ===> crop_D=128
+2024-12-07 19:36:36 ===> output_D=155
+2024-12-07 19:36:36 ===> batch_size=2
+2024-12-07 19:36:36 ===> OOD_Condition=noise
+2024-12-07 19:36:36 ===> OOD_Level=3
+2024-12-07 19:36:36 ===> snapshot=True
+2024-12-07 19:36:36 ===> Uncertainty_Loss=True
+2024-12-07 19:36:36 ===> input_modality=four
+2024-12-07 19:36:36 ===> model_name=U
+2024-12-07 19:36:36 ===> test_epoch=112
+2024-12-07 19:36:36 ===> device=cpu
+2024-12-07 19:36:36 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:36:36 ===> aug_smooth=False
+2024-12-07 19:36:36 ===> eigen_smooth=False
+2024-12-07 19:36:36 ===> method=gradcam
+2024-12-07 19:36:36 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:36:36 ===> num_classes=2
+2024-12-07 19:36:36 ===> out_size=(584, 565)
+2024-12-07 19:36:36 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:36:36 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:37 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:36:37 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:36:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:37 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:36:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:37 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:36:37 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:36:37 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:36:37 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:36:37 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:36:37 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:36:37 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:36:37 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:36:37 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:36:37 ===> ===========>Test begining!===========
+2024-12-07 19:36:37 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:36:37 ===> user=name of user
+2024-12-07 19:36:37 ===> experiment=UMIS
+2024-12-07 19:36:37 ===> date=2024-12-07
+2024-12-07 19:36:37 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:37 ===> start_epoch=112
+2024-12-07 19:36:37 ===> end_epochs=500
+2024-12-07 19:36:37 ===> submission=./results
+2024-12-07 19:36:37 ===> lambda_epochs=50
+2024-12-07 19:36:37 ===> save_freq=5
+2024-12-07 19:36:37 ===> lr=0.002
+2024-12-07 19:36:37 ===> savepath=./results/plot/output
+2024-12-07 19:36:37 ===> save_dir=./results
+2024-12-07 19:36:37 ===> mode=test
+2024-12-07 19:36:37 ===> dataset=DRIVE
+2024-12-07 19:36:37 ===> folder=folder0
+2024-12-07 19:36:37 ===> input_H=240
+2024-12-07 19:36:37 ===> input_W=240
+2024-12-07 19:36:37 ===> input_D=160
+2024-12-07 19:36:37 ===> crop_H=128
+2024-12-07 19:36:37 ===> crop_W=128
+2024-12-07 19:36:37 ===> crop_D=128
+2024-12-07 19:36:37 ===> output_D=155
+2024-12-07 19:36:37 ===> batch_size=2
+2024-12-07 19:36:37 ===> OOD_Condition=blur
+2024-12-07 19:36:37 ===> OOD_Level=1
+2024-12-07 19:36:37 ===> snapshot=True
+2024-12-07 19:36:37 ===> Uncertainty_Loss=True
+2024-12-07 19:36:37 ===> input_modality=four
+2024-12-07 19:36:37 ===> model_name=U
+2024-12-07 19:36:37 ===> test_epoch=112
+2024-12-07 19:36:37 ===> device=cpu
+2024-12-07 19:36:37 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:36:37 ===> aug_smooth=False
+2024-12-07 19:36:37 ===> eigen_smooth=False
+2024-12-07 19:36:37 ===> method=gradcam
+2024-12-07 19:36:37 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:36:37 ===> num_classes=2
+2024-12-07 19:36:37 ===> out_size=(584, 565)
+2024-12-07 19:36:37 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:36:37 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:38 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:36:38 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:36:38 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:36:38 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:36:38 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:36:38 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:36:38 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:36:38 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:36:38 ===> ===========>Test begining!===========
+2024-12-07 19:36:38 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:36:38 ===> user=name of user
+2024-12-07 19:36:38 ===> experiment=UMIS
+2024-12-07 19:36:38 ===> date=2024-12-07
+2024-12-07 19:36:38 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:38 ===> start_epoch=112
+2024-12-07 19:36:38 ===> end_epochs=500
+2024-12-07 19:36:38 ===> submission=./results
+2024-12-07 19:36:38 ===> lambda_epochs=50
+2024-12-07 19:36:38 ===> save_freq=5
+2024-12-07 19:36:38 ===> lr=0.002
+2024-12-07 19:36:38 ===> savepath=./results/plot/output
+2024-12-07 19:36:38 ===> save_dir=./results
+2024-12-07 19:36:38 ===> mode=test
+2024-12-07 19:36:38 ===> dataset=DRIVE
+2024-12-07 19:36:38 ===> folder=folder0
+2024-12-07 19:36:38 ===> input_H=240
+2024-12-07 19:36:38 ===> input_W=240
+2024-12-07 19:36:38 ===> input_D=160
+2024-12-07 19:36:38 ===> crop_H=128
+2024-12-07 19:36:38 ===> crop_W=128
+2024-12-07 19:36:38 ===> crop_D=128
+2024-12-07 19:36:38 ===> output_D=155
+2024-12-07 19:36:38 ===> batch_size=2
+2024-12-07 19:36:38 ===> OOD_Condition=blur
+2024-12-07 19:36:38 ===> OOD_Level=2
+2024-12-07 19:36:38 ===> snapshot=True
+2024-12-07 19:36:38 ===> Uncertainty_Loss=True
+2024-12-07 19:36:38 ===> input_modality=four
+2024-12-07 19:36:38 ===> model_name=U
+2024-12-07 19:36:38 ===> test_epoch=112
+2024-12-07 19:36:38 ===> device=cpu
+2024-12-07 19:36:38 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:36:38 ===> aug_smooth=False
+2024-12-07 19:36:38 ===> eigen_smooth=False
+2024-12-07 19:36:38 ===> method=gradcam
+2024-12-07 19:36:38 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:36:38 ===> num_classes=2
+2024-12-07 19:36:38 ===> out_size=(584, 565)
+2024-12-07 19:36:38 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:36:38 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:36:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:39 ===> Single sample test time consumption 0.06 seconds!
+2024-12-07 19:36:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:39 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:36:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:39 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:36:39 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:36:39 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:36:39 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:36:39 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:36:39 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:36:39 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:36:39 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:36:39 ===> ===========>Test begining!===========
+2024-12-07 19:36:39 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:36:39 ===> user=name of user
+2024-12-07 19:36:39 ===> experiment=UMIS
+2024-12-07 19:36:39 ===> date=2024-12-07
+2024-12-07 19:36:39 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:39 ===> start_epoch=112
+2024-12-07 19:36:39 ===> end_epochs=500
+2024-12-07 19:36:39 ===> submission=./results
+2024-12-07 19:36:39 ===> lambda_epochs=50
+2024-12-07 19:36:39 ===> save_freq=5
+2024-12-07 19:36:39 ===> lr=0.002
+2024-12-07 19:36:39 ===> savepath=./results/plot/output
+2024-12-07 19:36:39 ===> save_dir=./results
+2024-12-07 19:36:39 ===> mode=test
+2024-12-07 19:36:39 ===> dataset=DRIVE
+2024-12-07 19:36:39 ===> folder=folder0
+2024-12-07 19:36:39 ===> input_H=240
+2024-12-07 19:36:39 ===> input_W=240
+2024-12-07 19:36:39 ===> input_D=160
+2024-12-07 19:36:39 ===> crop_H=128
+2024-12-07 19:36:39 ===> crop_W=128
+2024-12-07 19:36:39 ===> crop_D=128
+2024-12-07 19:36:39 ===> output_D=155
+2024-12-07 19:36:39 ===> batch_size=2
+2024-12-07 19:36:39 ===> OOD_Condition=blur
+2024-12-07 19:36:39 ===> OOD_Level=3
+2024-12-07 19:36:39 ===> snapshot=True
+2024-12-07 19:36:39 ===> Uncertainty_Loss=True
+2024-12-07 19:36:39 ===> input_modality=four
+2024-12-07 19:36:39 ===> model_name=U
+2024-12-07 19:36:39 ===> test_epoch=112
+2024-12-07 19:36:39 ===> device=cpu
+2024-12-07 19:36:39 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:36:39 ===> aug_smooth=False
+2024-12-07 19:36:39 ===> eigen_smooth=False
+2024-12-07 19:36:39 ===> method=gradcam
+2024-12-07 19:36:39 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:36:39 ===> num_classes=2
+2024-12-07 19:36:39 ===> out_size=(584, 565)
+2024-12-07 19:36:39 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:36:39 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:36:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:40 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:36:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:36:40 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:36:40 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:36:40 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:36:40 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:36:40 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:36:40 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:36:40 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:36:40 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:48:36 ===> re-training!!!
+2024-12-07 19:48:36 ===> ===========>Test begining!===========
+2024-12-07 19:48:36 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:48:36 ===> user=name of user
+2024-12-07 19:48:36 ===> experiment=UMIS
+2024-12-07 19:48:36 ===> date=2024-12-07
+2024-12-07 19:48:36 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:48:36 ===> start_epoch=1
+2024-12-07 19:48:36 ===> end_epochs=500
+2024-12-07 19:48:36 ===> submission=./results
+2024-12-07 19:48:36 ===> lambda_epochs=50
+2024-12-07 19:48:36 ===> save_freq=5
+2024-12-07 19:48:36 ===> lr=0.002
+2024-12-07 19:48:36 ===> savepath=./results/plot/output
+2024-12-07 19:48:36 ===> save_dir=./results
+2024-12-07 19:48:36 ===> mode=test
+2024-12-07 19:48:36 ===> dataset=DRIVE
+2024-12-07 19:48:36 ===> folder=folder0
+2024-12-07 19:48:36 ===> input_H=240
+2024-12-07 19:48:36 ===> input_W=240
+2024-12-07 19:48:36 ===> input_D=160
+2024-12-07 19:48:36 ===> crop_H=128
+2024-12-07 19:48:36 ===> crop_W=128
+2024-12-07 19:48:36 ===> crop_D=128
+2024-12-07 19:48:36 ===> output_D=155
+2024-12-07 19:48:36 ===> batch_size=2
+2024-12-07 19:48:36 ===> OOD_Condition=noise
+2024-12-07 19:48:36 ===> OOD_Level=1
+2024-12-07 19:48:36 ===> snapshot=True
+2024-12-07 19:48:36 ===> Uncertainty_Loss=True
+2024-12-07 19:48:36 ===> input_modality=four
+2024-12-07 19:48:36 ===> model_name=U
+2024-12-07 19:48:36 ===> test_epoch=112
+2024-12-07 19:48:36 ===> device=cpu
+2024-12-07 19:48:36 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:48:36 ===> aug_smooth=False
+2024-12-07 19:48:36 ===> eigen_smooth=False
+2024-12-07 19:48:36 ===> method=gradcam
+2024-12-07 19:48:36 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:48:36 ===> num_classes=2
+2024-12-07 19:48:36 ===> out_size=(584, 565)
+2024-12-07 19:48:36 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:48:36 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:39 ===> Single sample test time consumption 76.63 seconds!
+2024-12-07 19:50:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:41 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:50:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:41 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:50:41 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:50:41 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:50:41 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:50:41 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:50:41 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:50:41 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:50:41 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:50:41 ===> ===========>Test begining!===========
+2024-12-07 19:50:41 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:50:41 ===> user=name of user
+2024-12-07 19:50:41 ===> experiment=UMIS
+2024-12-07 19:50:41 ===> date=2024-12-07
+2024-12-07 19:50:41 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:41 ===> start_epoch=112
+2024-12-07 19:50:41 ===> end_epochs=500
+2024-12-07 19:50:41 ===> submission=./results
+2024-12-07 19:50:41 ===> lambda_epochs=50
+2024-12-07 19:50:41 ===> save_freq=5
+2024-12-07 19:50:41 ===> lr=0.002
+2024-12-07 19:50:41 ===> savepath=./results/plot/output
+2024-12-07 19:50:41 ===> save_dir=./results
+2024-12-07 19:50:41 ===> mode=test
+2024-12-07 19:50:41 ===> dataset=DRIVE
+2024-12-07 19:50:41 ===> folder=folder0
+2024-12-07 19:50:41 ===> input_H=240
+2024-12-07 19:50:41 ===> input_W=240
+2024-12-07 19:50:41 ===> input_D=160
+2024-12-07 19:50:41 ===> crop_H=128
+2024-12-07 19:50:41 ===> crop_W=128
+2024-12-07 19:50:41 ===> crop_D=128
+2024-12-07 19:50:41 ===> output_D=155
+2024-12-07 19:50:41 ===> batch_size=2
+2024-12-07 19:50:41 ===> OOD_Condition=noise
+2024-12-07 19:50:41 ===> OOD_Level=2
+2024-12-07 19:50:41 ===> snapshot=True
+2024-12-07 19:50:41 ===> Uncertainty_Loss=True
+2024-12-07 19:50:41 ===> input_modality=four
+2024-12-07 19:50:41 ===> model_name=U
+2024-12-07 19:50:41 ===> test_epoch=112
+2024-12-07 19:50:41 ===> device=cpu
+2024-12-07 19:50:41 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:50:41 ===> aug_smooth=False
+2024-12-07 19:50:41 ===> eigen_smooth=False
+2024-12-07 19:50:41 ===> method=gradcam
+2024-12-07 19:50:41 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:50:41 ===> num_classes=2
+2024-12-07 19:50:41 ===> out_size=(584, 565)
+2024-12-07 19:50:41 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:50:41 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:42 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:42 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:50:42 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:42 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:42 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:42 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:42 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:50:42 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:50:42 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:50:42 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:50:42 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:50:42 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:50:42 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:50:42 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:50:42 ===> ===========>Test begining!===========
+2024-12-07 19:50:42 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:50:42 ===> user=name of user
+2024-12-07 19:50:42 ===> experiment=UMIS
+2024-12-07 19:50:42 ===> date=2024-12-07
+2024-12-07 19:50:42 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:42 ===> start_epoch=112
+2024-12-07 19:50:42 ===> end_epochs=500
+2024-12-07 19:50:42 ===> submission=./results
+2024-12-07 19:50:42 ===> lambda_epochs=50
+2024-12-07 19:50:42 ===> save_freq=5
+2024-12-07 19:50:42 ===> lr=0.002
+2024-12-07 19:50:42 ===> savepath=./results/plot/output
+2024-12-07 19:50:42 ===> save_dir=./results
+2024-12-07 19:50:42 ===> mode=test
+2024-12-07 19:50:42 ===> dataset=DRIVE
+2024-12-07 19:50:42 ===> folder=folder0
+2024-12-07 19:50:42 ===> input_H=240
+2024-12-07 19:50:42 ===> input_W=240
+2024-12-07 19:50:42 ===> input_D=160
+2024-12-07 19:50:42 ===> crop_H=128
+2024-12-07 19:50:42 ===> crop_W=128
+2024-12-07 19:50:42 ===> crop_D=128
+2024-12-07 19:50:42 ===> output_D=155
+2024-12-07 19:50:42 ===> batch_size=2
+2024-12-07 19:50:42 ===> OOD_Condition=noise
+2024-12-07 19:50:42 ===> OOD_Level=3
+2024-12-07 19:50:42 ===> snapshot=True
+2024-12-07 19:50:42 ===> Uncertainty_Loss=True
+2024-12-07 19:50:42 ===> input_modality=four
+2024-12-07 19:50:42 ===> model_name=U
+2024-12-07 19:50:42 ===> test_epoch=112
+2024-12-07 19:50:42 ===> device=cpu
+2024-12-07 19:50:42 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:50:42 ===> aug_smooth=False
+2024-12-07 19:50:42 ===> eigen_smooth=False
+2024-12-07 19:50:42 ===> method=gradcam
+2024-12-07 19:50:42 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:50:42 ===> num_classes=2
+2024-12-07 19:50:42 ===> out_size=(584, 565)
+2024-12-07 19:50:42 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:50:42 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:42 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:42 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:50:42 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:42 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:50:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:43 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:50:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:43 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:50:43 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:50:43 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:50:43 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:50:43 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:50:43 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:50:43 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:50:43 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:50:43 ===> ===========>Test begining!===========
+2024-12-07 19:50:43 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:50:43 ===> user=name of user
+2024-12-07 19:50:43 ===> experiment=UMIS
+2024-12-07 19:50:43 ===> date=2024-12-07
+2024-12-07 19:50:43 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:43 ===> start_epoch=112
+2024-12-07 19:50:43 ===> end_epochs=500
+2024-12-07 19:50:43 ===> submission=./results
+2024-12-07 19:50:43 ===> lambda_epochs=50
+2024-12-07 19:50:43 ===> save_freq=5
+2024-12-07 19:50:43 ===> lr=0.002
+2024-12-07 19:50:43 ===> savepath=./results/plot/output
+2024-12-07 19:50:43 ===> save_dir=./results
+2024-12-07 19:50:43 ===> mode=test
+2024-12-07 19:50:43 ===> dataset=DRIVE
+2024-12-07 19:50:43 ===> folder=folder0
+2024-12-07 19:50:43 ===> input_H=240
+2024-12-07 19:50:43 ===> input_W=240
+2024-12-07 19:50:43 ===> input_D=160
+2024-12-07 19:50:43 ===> crop_H=128
+2024-12-07 19:50:43 ===> crop_W=128
+2024-12-07 19:50:43 ===> crop_D=128
+2024-12-07 19:50:43 ===> output_D=155
+2024-12-07 19:50:43 ===> batch_size=2
+2024-12-07 19:50:43 ===> OOD_Condition=blur
+2024-12-07 19:50:43 ===> OOD_Level=1
+2024-12-07 19:50:43 ===> snapshot=True
+2024-12-07 19:50:43 ===> Uncertainty_Loss=True
+2024-12-07 19:50:43 ===> input_modality=four
+2024-12-07 19:50:43 ===> model_name=U
+2024-12-07 19:50:43 ===> test_epoch=112
+2024-12-07 19:50:43 ===> device=cpu
+2024-12-07 19:50:43 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:50:43 ===> aug_smooth=False
+2024-12-07 19:50:43 ===> eigen_smooth=False
+2024-12-07 19:50:43 ===> method=gradcam
+2024-12-07 19:50:43 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:50:43 ===> num_classes=2
+2024-12-07 19:50:43 ===> out_size=(584, 565)
+2024-12-07 19:50:43 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:50:43 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:43 ===> Single sample test time consumption 0.03 seconds!
+2024-12-07 19:50:44 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:44 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:44 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:50:44 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:44 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:50:44 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:50:44 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:50:44 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:50:44 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:50:44 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:50:44 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:50:44 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:50:44 ===> ===========>Test begining!===========
+2024-12-07 19:50:44 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:50:44 ===> user=name of user
+2024-12-07 19:50:44 ===> experiment=UMIS
+2024-12-07 19:50:44 ===> date=2024-12-07
+2024-12-07 19:50:44 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:44 ===> start_epoch=112
+2024-12-07 19:50:44 ===> end_epochs=500
+2024-12-07 19:50:44 ===> submission=./results
+2024-12-07 19:50:44 ===> lambda_epochs=50
+2024-12-07 19:50:44 ===> save_freq=5
+2024-12-07 19:50:44 ===> lr=0.002
+2024-12-07 19:50:44 ===> savepath=./results/plot/output
+2024-12-07 19:50:44 ===> save_dir=./results
+2024-12-07 19:50:44 ===> mode=test
+2024-12-07 19:50:44 ===> dataset=DRIVE
+2024-12-07 19:50:44 ===> folder=folder0
+2024-12-07 19:50:44 ===> input_H=240
+2024-12-07 19:50:44 ===> input_W=240
+2024-12-07 19:50:44 ===> input_D=160
+2024-12-07 19:50:44 ===> crop_H=128
+2024-12-07 19:50:44 ===> crop_W=128
+2024-12-07 19:50:44 ===> crop_D=128
+2024-12-07 19:50:44 ===> output_D=155
+2024-12-07 19:50:44 ===> batch_size=2
+2024-12-07 19:50:44 ===> OOD_Condition=blur
+2024-12-07 19:50:44 ===> OOD_Level=2
+2024-12-07 19:50:44 ===> snapshot=True
+2024-12-07 19:50:44 ===> Uncertainty_Loss=True
+2024-12-07 19:50:44 ===> input_modality=four
+2024-12-07 19:50:44 ===> model_name=U
+2024-12-07 19:50:44 ===> test_epoch=112
+2024-12-07 19:50:44 ===> device=cpu
+2024-12-07 19:50:44 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:50:44 ===> aug_smooth=False
+2024-12-07 19:50:44 ===> eigen_smooth=False
+2024-12-07 19:50:44 ===> method=gradcam
+2024-12-07 19:50:44 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:50:44 ===> num_classes=2
+2024-12-07 19:50:44 ===> out_size=(584, 565)
+2024-12-07 19:50:44 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:50:44 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:44 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:44 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:50:44 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:44 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:50:44 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:50:44 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:45 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:50:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:45 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:50:45 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:50:45 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:50:45 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:50:45 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:50:45 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:50:45 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:50:45 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:50:45 ===> ===========>Test begining!===========
+2024-12-07 19:50:45 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:50:45 ===> user=name of user
+2024-12-07 19:50:45 ===> experiment=UMIS
+2024-12-07 19:50:45 ===> date=2024-12-07
+2024-12-07 19:50:45 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:45 ===> start_epoch=112
+2024-12-07 19:50:45 ===> end_epochs=500
+2024-12-07 19:50:45 ===> submission=./results
+2024-12-07 19:50:45 ===> lambda_epochs=50
+2024-12-07 19:50:45 ===> save_freq=5
+2024-12-07 19:50:45 ===> lr=0.002
+2024-12-07 19:50:45 ===> savepath=./results/plot/output
+2024-12-07 19:50:45 ===> save_dir=./results
+2024-12-07 19:50:45 ===> mode=test
+2024-12-07 19:50:45 ===> dataset=DRIVE
+2024-12-07 19:50:45 ===> folder=folder0
+2024-12-07 19:50:45 ===> input_H=240
+2024-12-07 19:50:45 ===> input_W=240
+2024-12-07 19:50:45 ===> input_D=160
+2024-12-07 19:50:45 ===> crop_H=128
+2024-12-07 19:50:45 ===> crop_W=128
+2024-12-07 19:50:45 ===> crop_D=128
+2024-12-07 19:50:45 ===> output_D=155
+2024-12-07 19:50:45 ===> batch_size=2
+2024-12-07 19:50:45 ===> OOD_Condition=blur
+2024-12-07 19:50:45 ===> OOD_Level=3
+2024-12-07 19:50:45 ===> snapshot=True
+2024-12-07 19:50:45 ===> Uncertainty_Loss=True
+2024-12-07 19:50:45 ===> input_modality=four
+2024-12-07 19:50:45 ===> model_name=U
+2024-12-07 19:50:45 ===> test_epoch=112
+2024-12-07 19:50:45 ===> device=cpu
+2024-12-07 19:50:45 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:50:45 ===> aug_smooth=False
+2024-12-07 19:50:45 ===> eigen_smooth=False
+2024-12-07 19:50:45 ===> method=gradcam
+2024-12-07 19:50:45 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:50:45 ===> num_classes=2
+2024-12-07 19:50:45 ===> out_size=(584, 565)
+2024-12-07 19:50:45 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:50:45 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:50:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:45 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:50:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:46 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:50:46 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:50:46 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:50:46 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:50:46 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:50:46 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:50:46 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:50:46 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:50:46 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:50:46 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:54:50 ===> re-training!!!
+2024-12-07 19:54:50 ===> ===========>Test begining!===========
+2024-12-07 19:54:50 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:54:50 ===> user=name of user
+2024-12-07 19:54:50 ===> experiment=UMIS
+2024-12-07 19:54:50 ===> date=2024-12-07
+2024-12-07 19:54:50 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:50 ===> start_epoch=1
+2024-12-07 19:54:50 ===> end_epochs=500
+2024-12-07 19:54:50 ===> submission=./results
+2024-12-07 19:54:50 ===> lambda_epochs=50
+2024-12-07 19:54:50 ===> save_freq=5
+2024-12-07 19:54:50 ===> lr=0.002
+2024-12-07 19:54:50 ===> savepath=./results/plot/output
+2024-12-07 19:54:50 ===> save_dir=./results
+2024-12-07 19:54:50 ===> mode=test
+2024-12-07 19:54:50 ===> dataset=DRIVE
+2024-12-07 19:54:50 ===> folder=folder0
+2024-12-07 19:54:50 ===> input_H=240
+2024-12-07 19:54:50 ===> input_W=240
+2024-12-07 19:54:50 ===> input_D=160
+2024-12-07 19:54:50 ===> crop_H=128
+2024-12-07 19:54:50 ===> crop_W=128
+2024-12-07 19:54:50 ===> crop_D=128
+2024-12-07 19:54:50 ===> output_D=155
+2024-12-07 19:54:50 ===> batch_size=2
+2024-12-07 19:54:50 ===> OOD_Condition=noise
+2024-12-07 19:54:50 ===> OOD_Level=1
+2024-12-07 19:54:50 ===> snapshot=True
+2024-12-07 19:54:50 ===> Uncertainty_Loss=True
+2024-12-07 19:54:50 ===> input_modality=four
+2024-12-07 19:54:50 ===> model_name=U
+2024-12-07 19:54:50 ===> test_epoch=112
+2024-12-07 19:54:50 ===> device=cpu
+2024-12-07 19:54:50 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:54:50 ===> aug_smooth=False
+2024-12-07 19:54:50 ===> eigen_smooth=False
+2024-12-07 19:54:50 ===> method=gradcam
+2024-12-07 19:54:50 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:54:50 ===> num_classes=2
+2024-12-07 19:54:50 ===> out_size=(584, 565)
+2024-12-07 19:54:50 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:54:50 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:53 ===> Single sample test time consumption 3.57 seconds!
+2024-12-07 19:54:53 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:54 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:54:54 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:54:54 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:54 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:54 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:54 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 19:54:54 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:54 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:54:54 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:54:54 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:54:54 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:54:54 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:54:54 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:54:54 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:54:54 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:54:54 ===> ===========>Test begining!===========
+2024-12-07 19:54:54 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:54:54 ===> user=name of user
+2024-12-07 19:54:54 ===> experiment=UMIS
+2024-12-07 19:54:54 ===> date=2024-12-07
+2024-12-07 19:54:54 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:54 ===> start_epoch=112
+2024-12-07 19:54:54 ===> end_epochs=500
+2024-12-07 19:54:54 ===> submission=./results
+2024-12-07 19:54:54 ===> lambda_epochs=50
+2024-12-07 19:54:54 ===> save_freq=5
+2024-12-07 19:54:54 ===> lr=0.002
+2024-12-07 19:54:54 ===> savepath=./results/plot/output
+2024-12-07 19:54:54 ===> save_dir=./results
+2024-12-07 19:54:54 ===> mode=test
+2024-12-07 19:54:54 ===> dataset=DRIVE
+2024-12-07 19:54:54 ===> folder=folder0
+2024-12-07 19:54:54 ===> input_H=240
+2024-12-07 19:54:54 ===> input_W=240
+2024-12-07 19:54:54 ===> input_D=160
+2024-12-07 19:54:54 ===> crop_H=128
+2024-12-07 19:54:54 ===> crop_W=128
+2024-12-07 19:54:54 ===> crop_D=128
+2024-12-07 19:54:54 ===> output_D=155
+2024-12-07 19:54:54 ===> batch_size=2
+2024-12-07 19:54:54 ===> OOD_Condition=noise
+2024-12-07 19:54:54 ===> OOD_Level=2
+2024-12-07 19:54:54 ===> snapshot=True
+2024-12-07 19:54:54 ===> Uncertainty_Loss=True
+2024-12-07 19:54:54 ===> input_modality=four
+2024-12-07 19:54:54 ===> model_name=U
+2024-12-07 19:54:54 ===> test_epoch=112
+2024-12-07 19:54:54 ===> device=cpu
+2024-12-07 19:54:54 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:54:54 ===> aug_smooth=False
+2024-12-07 19:54:54 ===> eigen_smooth=False
+2024-12-07 19:54:54 ===> method=gradcam
+2024-12-07 19:54:54 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:54:54 ===> num_classes=2
+2024-12-07 19:54:54 ===> out_size=(584, 565)
+2024-12-07 19:54:54 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:54:54 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:54 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:54 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:54 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:55 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:54:55 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:54:55 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:54:55 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:54:55 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:54:55 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:54:55 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:54:55 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:54:55 ===> ===========>Test begining!===========
+2024-12-07 19:54:55 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:54:55 ===> user=name of user
+2024-12-07 19:54:55 ===> experiment=UMIS
+2024-12-07 19:54:55 ===> date=2024-12-07
+2024-12-07 19:54:55 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:55 ===> start_epoch=112
+2024-12-07 19:54:55 ===> end_epochs=500
+2024-12-07 19:54:55 ===> submission=./results
+2024-12-07 19:54:55 ===> lambda_epochs=50
+2024-12-07 19:54:55 ===> save_freq=5
+2024-12-07 19:54:55 ===> lr=0.002
+2024-12-07 19:54:55 ===> savepath=./results/plot/output
+2024-12-07 19:54:55 ===> save_dir=./results
+2024-12-07 19:54:55 ===> mode=test
+2024-12-07 19:54:55 ===> dataset=DRIVE
+2024-12-07 19:54:55 ===> folder=folder0
+2024-12-07 19:54:55 ===> input_H=240
+2024-12-07 19:54:55 ===> input_W=240
+2024-12-07 19:54:55 ===> input_D=160
+2024-12-07 19:54:55 ===> crop_H=128
+2024-12-07 19:54:55 ===> crop_W=128
+2024-12-07 19:54:55 ===> crop_D=128
+2024-12-07 19:54:55 ===> output_D=155
+2024-12-07 19:54:55 ===> batch_size=2
+2024-12-07 19:54:55 ===> OOD_Condition=noise
+2024-12-07 19:54:55 ===> OOD_Level=3
+2024-12-07 19:54:55 ===> snapshot=True
+2024-12-07 19:54:55 ===> Uncertainty_Loss=True
+2024-12-07 19:54:55 ===> input_modality=four
+2024-12-07 19:54:55 ===> model_name=U
+2024-12-07 19:54:55 ===> test_epoch=112
+2024-12-07 19:54:55 ===> device=cpu
+2024-12-07 19:54:55 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:54:55 ===> aug_smooth=False
+2024-12-07 19:54:55 ===> eigen_smooth=False
+2024-12-07 19:54:55 ===> method=gradcam
+2024-12-07 19:54:55 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:54:55 ===> num_classes=2
+2024-12-07 19:54:55 ===> out_size=(584, 565)
+2024-12-07 19:54:55 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:54:55 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:54:55 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:56 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:56 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:56 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:56 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:56 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:54:56 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:54:56 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:54:56 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:54:56 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:54:56 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:54:56 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:54:56 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:54:56 ===> ===========>Test begining!===========
+2024-12-07 19:54:56 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:54:56 ===> user=name of user
+2024-12-07 19:54:56 ===> experiment=UMIS
+2024-12-07 19:54:56 ===> date=2024-12-07
+2024-12-07 19:54:56 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:56 ===> start_epoch=112
+2024-12-07 19:54:56 ===> end_epochs=500
+2024-12-07 19:54:56 ===> submission=./results
+2024-12-07 19:54:56 ===> lambda_epochs=50
+2024-12-07 19:54:56 ===> save_freq=5
+2024-12-07 19:54:56 ===> lr=0.002
+2024-12-07 19:54:56 ===> savepath=./results/plot/output
+2024-12-07 19:54:56 ===> save_dir=./results
+2024-12-07 19:54:56 ===> mode=test
+2024-12-07 19:54:56 ===> dataset=DRIVE
+2024-12-07 19:54:56 ===> folder=folder0
+2024-12-07 19:54:56 ===> input_H=240
+2024-12-07 19:54:56 ===> input_W=240
+2024-12-07 19:54:56 ===> input_D=160
+2024-12-07 19:54:56 ===> crop_H=128
+2024-12-07 19:54:56 ===> crop_W=128
+2024-12-07 19:54:56 ===> crop_D=128
+2024-12-07 19:54:56 ===> output_D=155
+2024-12-07 19:54:56 ===> batch_size=2
+2024-12-07 19:54:56 ===> OOD_Condition=blur
+2024-12-07 19:54:56 ===> OOD_Level=1
+2024-12-07 19:54:56 ===> snapshot=True
+2024-12-07 19:54:56 ===> Uncertainty_Loss=True
+2024-12-07 19:54:56 ===> input_modality=four
+2024-12-07 19:54:56 ===> model_name=U
+2024-12-07 19:54:56 ===> test_epoch=112
+2024-12-07 19:54:56 ===> device=cpu
+2024-12-07 19:54:56 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:54:56 ===> aug_smooth=False
+2024-12-07 19:54:56 ===> eigen_smooth=False
+2024-12-07 19:54:56 ===> method=gradcam
+2024-12-07 19:54:56 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:54:56 ===> num_classes=2
+2024-12-07 19:54:56 ===> out_size=(584, 565)
+2024-12-07 19:54:56 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:54:56 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:56 ===> Single sample test time consumption 0.03 seconds!
+2024-12-07 19:54:56 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:56 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:56 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:57 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:54:57 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:54:57 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:54:57 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:54:57 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:54:57 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:54:57 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:54:57 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:54:57 ===> ===========>Test begining!===========
+2024-12-07 19:54:57 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:54:57 ===> user=name of user
+2024-12-07 19:54:57 ===> experiment=UMIS
+2024-12-07 19:54:57 ===> date=2024-12-07
+2024-12-07 19:54:57 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:57 ===> start_epoch=112
+2024-12-07 19:54:57 ===> end_epochs=500
+2024-12-07 19:54:57 ===> submission=./results
+2024-12-07 19:54:57 ===> lambda_epochs=50
+2024-12-07 19:54:57 ===> save_freq=5
+2024-12-07 19:54:57 ===> lr=0.002
+2024-12-07 19:54:57 ===> savepath=./results/plot/output
+2024-12-07 19:54:57 ===> save_dir=./results
+2024-12-07 19:54:57 ===> mode=test
+2024-12-07 19:54:57 ===> dataset=DRIVE
+2024-12-07 19:54:57 ===> folder=folder0
+2024-12-07 19:54:57 ===> input_H=240
+2024-12-07 19:54:57 ===> input_W=240
+2024-12-07 19:54:57 ===> input_D=160
+2024-12-07 19:54:57 ===> crop_H=128
+2024-12-07 19:54:57 ===> crop_W=128
+2024-12-07 19:54:57 ===> crop_D=128
+2024-12-07 19:54:57 ===> output_D=155
+2024-12-07 19:54:57 ===> batch_size=2
+2024-12-07 19:54:57 ===> OOD_Condition=blur
+2024-12-07 19:54:57 ===> OOD_Level=2
+2024-12-07 19:54:57 ===> snapshot=True
+2024-12-07 19:54:57 ===> Uncertainty_Loss=True
+2024-12-07 19:54:57 ===> input_modality=four
+2024-12-07 19:54:57 ===> model_name=U
+2024-12-07 19:54:57 ===> test_epoch=112
+2024-12-07 19:54:57 ===> device=cpu
+2024-12-07 19:54:57 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:54:57 ===> aug_smooth=False
+2024-12-07 19:54:57 ===> eigen_smooth=False
+2024-12-07 19:54:57 ===> method=gradcam
+2024-12-07 19:54:57 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:54:57 ===> num_classes=2
+2024-12-07 19:54:57 ===> out_size=(584, 565)
+2024-12-07 19:54:57 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:54:57 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:57 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:58 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:58 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:58 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:58 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:54:58 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:54:58 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:54:58 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:54:58 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:54:58 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:54:58 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:54:58 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 19:54:58 ===> ===========>Test begining!===========
+2024-12-07 19:54:58 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 19:54:58 ===> user=name of user
+2024-12-07 19:54:58 ===> experiment=UMIS
+2024-12-07 19:54:58 ===> date=2024-12-07
+2024-12-07 19:54:58 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:58 ===> start_epoch=112
+2024-12-07 19:54:58 ===> end_epochs=500
+2024-12-07 19:54:58 ===> submission=./results
+2024-12-07 19:54:58 ===> lambda_epochs=50
+2024-12-07 19:54:58 ===> save_freq=5
+2024-12-07 19:54:58 ===> lr=0.002
+2024-12-07 19:54:58 ===> savepath=./results/plot/output
+2024-12-07 19:54:58 ===> save_dir=./results
+2024-12-07 19:54:58 ===> mode=test
+2024-12-07 19:54:58 ===> dataset=DRIVE
+2024-12-07 19:54:58 ===> folder=folder0
+2024-12-07 19:54:58 ===> input_H=240
+2024-12-07 19:54:58 ===> input_W=240
+2024-12-07 19:54:58 ===> input_D=160
+2024-12-07 19:54:58 ===> crop_H=128
+2024-12-07 19:54:58 ===> crop_W=128
+2024-12-07 19:54:58 ===> crop_D=128
+2024-12-07 19:54:58 ===> output_D=155
+2024-12-07 19:54:58 ===> batch_size=2
+2024-12-07 19:54:58 ===> OOD_Condition=blur
+2024-12-07 19:54:58 ===> OOD_Level=3
+2024-12-07 19:54:58 ===> snapshot=True
+2024-12-07 19:54:58 ===> Uncertainty_Loss=True
+2024-12-07 19:54:58 ===> input_modality=four
+2024-12-07 19:54:58 ===> model_name=U
+2024-12-07 19:54:58 ===> test_epoch=112
+2024-12-07 19:54:58 ===> device=cpu
+2024-12-07 19:54:58 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 19:54:58 ===> aug_smooth=False
+2024-12-07 19:54:58 ===> eigen_smooth=False
+2024-12-07 19:54:58 ===> method=gradcam
+2024-12-07 19:54:58 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 19:54:58 ===> num_classes=2
+2024-12-07 19:54:58 ===> out_size=(584, 565)
+2024-12-07 19:54:58 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 19:54:58 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 19:54:58 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:58 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:58 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:58 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:58 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:58 ===> Single sample test time consumption 0.03 seconds!
+2024-12-07 19:54:58 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 19:54:59 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:59 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 19:54:59 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 19:54:59 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 19:54:59 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 19:54:59 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 19:54:59 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 19:54:59 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 19:54:59 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 19:54:59 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:02:13 ===> re-training!!!
+2024-12-07 20:02:13 ===> ===========>Test begining!===========
+2024-12-07 20:02:13 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:02:13 ===> user=name of user
+2024-12-07 20:02:13 ===> experiment=UMIS
+2024-12-07 20:02:13 ===> date=2024-12-07
+2024-12-07 20:02:13 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:13 ===> start_epoch=1
+2024-12-07 20:02:13 ===> end_epochs=500
+2024-12-07 20:02:13 ===> submission=./results
+2024-12-07 20:02:13 ===> lambda_epochs=50
+2024-12-07 20:02:13 ===> save_freq=5
+2024-12-07 20:02:13 ===> lr=0.002
+2024-12-07 20:02:13 ===> savepath=./results/plot/output
+2024-12-07 20:02:13 ===> save_dir=./results
+2024-12-07 20:02:13 ===> mode=test
+2024-12-07 20:02:13 ===> dataset=DRIVE
+2024-12-07 20:02:13 ===> folder=folder0
+2024-12-07 20:02:13 ===> input_H=240
+2024-12-07 20:02:13 ===> input_W=240
+2024-12-07 20:02:13 ===> input_D=160
+2024-12-07 20:02:13 ===> crop_H=128
+2024-12-07 20:02:13 ===> crop_W=128
+2024-12-07 20:02:13 ===> crop_D=128
+2024-12-07 20:02:13 ===> output_D=155
+2024-12-07 20:02:13 ===> batch_size=2
+2024-12-07 20:02:13 ===> OOD_Condition=noise
+2024-12-07 20:02:13 ===> OOD_Level=1
+2024-12-07 20:02:13 ===> snapshot=True
+2024-12-07 20:02:13 ===> Uncertainty_Loss=True
+2024-12-07 20:02:13 ===> input_modality=four
+2024-12-07 20:02:13 ===> model_name=U
+2024-12-07 20:02:13 ===> test_epoch=112
+2024-12-07 20:02:13 ===> device=cpu
+2024-12-07 20:02:13 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:02:13 ===> aug_smooth=False
+2024-12-07 20:02:13 ===> eigen_smooth=False
+2024-12-07 20:02:13 ===> method=gradcam
+2024-12-07 20:02:13 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:02:13 ===> num_classes=2
+2024-12-07 20:02:13 ===> out_size=(584, 565)
+2024-12-07 20:02:13 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:02:13 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:19 ===> Single sample test time consumption 6.05 seconds!
+2024-12-07 20:02:19 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:20 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:20 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:20 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:02:20 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:20 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:20 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:20 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:20 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:02:20 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:02:20 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:02:20 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:02:20 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:02:20 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:02:20 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:02:20 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:02:20 ===> ===========>Test begining!===========
+2024-12-07 20:02:20 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:02:20 ===> user=name of user
+2024-12-07 20:02:20 ===> experiment=UMIS
+2024-12-07 20:02:20 ===> date=2024-12-07
+2024-12-07 20:02:20 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:20 ===> start_epoch=112
+2024-12-07 20:02:20 ===> end_epochs=500
+2024-12-07 20:02:20 ===> submission=./results
+2024-12-07 20:02:20 ===> lambda_epochs=50
+2024-12-07 20:02:20 ===> save_freq=5
+2024-12-07 20:02:20 ===> lr=0.002
+2024-12-07 20:02:20 ===> savepath=./results/plot/output
+2024-12-07 20:02:20 ===> save_dir=./results
+2024-12-07 20:02:20 ===> mode=test
+2024-12-07 20:02:20 ===> dataset=DRIVE
+2024-12-07 20:02:20 ===> folder=folder0
+2024-12-07 20:02:20 ===> input_H=240
+2024-12-07 20:02:20 ===> input_W=240
+2024-12-07 20:02:20 ===> input_D=160
+2024-12-07 20:02:20 ===> crop_H=128
+2024-12-07 20:02:20 ===> crop_W=128
+2024-12-07 20:02:20 ===> crop_D=128
+2024-12-07 20:02:20 ===> output_D=155
+2024-12-07 20:02:20 ===> batch_size=2
+2024-12-07 20:02:20 ===> OOD_Condition=noise
+2024-12-07 20:02:20 ===> OOD_Level=2
+2024-12-07 20:02:20 ===> snapshot=True
+2024-12-07 20:02:20 ===> Uncertainty_Loss=True
+2024-12-07 20:02:20 ===> input_modality=four
+2024-12-07 20:02:20 ===> model_name=U
+2024-12-07 20:02:20 ===> test_epoch=112
+2024-12-07 20:02:20 ===> device=cpu
+2024-12-07 20:02:20 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:02:20 ===> aug_smooth=False
+2024-12-07 20:02:20 ===> eigen_smooth=False
+2024-12-07 20:02:20 ===> method=gradcam
+2024-12-07 20:02:20 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:02:20 ===> num_classes=2
+2024-12-07 20:02:20 ===> out_size=(584, 565)
+2024-12-07 20:02:20 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:02:20 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:21 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:21 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:21 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:21 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:21 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:21 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:21 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:21 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:22 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:22 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:02:22 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:02:22 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:02:22 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:02:22 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:02:22 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:02:22 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:02:22 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:02:22 ===> ===========>Test begining!===========
+2024-12-07 20:02:22 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:02:22 ===> user=name of user
+2024-12-07 20:02:22 ===> experiment=UMIS
+2024-12-07 20:02:22 ===> date=2024-12-07
+2024-12-07 20:02:22 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:22 ===> start_epoch=112
+2024-12-07 20:02:22 ===> end_epochs=500
+2024-12-07 20:02:22 ===> submission=./results
+2024-12-07 20:02:22 ===> lambda_epochs=50
+2024-12-07 20:02:22 ===> save_freq=5
+2024-12-07 20:02:22 ===> lr=0.002
+2024-12-07 20:02:22 ===> savepath=./results/plot/output
+2024-12-07 20:02:22 ===> save_dir=./results
+2024-12-07 20:02:22 ===> mode=test
+2024-12-07 20:02:22 ===> dataset=DRIVE
+2024-12-07 20:02:22 ===> folder=folder0
+2024-12-07 20:02:22 ===> input_H=240
+2024-12-07 20:02:22 ===> input_W=240
+2024-12-07 20:02:22 ===> input_D=160
+2024-12-07 20:02:22 ===> crop_H=128
+2024-12-07 20:02:22 ===> crop_W=128
+2024-12-07 20:02:22 ===> crop_D=128
+2024-12-07 20:02:22 ===> output_D=155
+2024-12-07 20:02:22 ===> batch_size=2
+2024-12-07 20:02:22 ===> OOD_Condition=noise
+2024-12-07 20:02:22 ===> OOD_Level=3
+2024-12-07 20:02:22 ===> snapshot=True
+2024-12-07 20:02:22 ===> Uncertainty_Loss=True
+2024-12-07 20:02:22 ===> input_modality=four
+2024-12-07 20:02:22 ===> model_name=U
+2024-12-07 20:02:22 ===> test_epoch=112
+2024-12-07 20:02:22 ===> device=cpu
+2024-12-07 20:02:22 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:02:22 ===> aug_smooth=False
+2024-12-07 20:02:22 ===> eigen_smooth=False
+2024-12-07 20:02:22 ===> method=gradcam
+2024-12-07 20:02:22 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:02:22 ===> num_classes=2
+2024-12-07 20:02:22 ===> out_size=(584, 565)
+2024-12-07 20:02:22 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:02:22 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:22 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:22 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:22 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:02:22 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:02:22 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:02:22 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:23 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:23 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:23 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:23 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:02:23 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:02:23 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:02:23 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:02:23 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:02:23 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:02:23 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:02:23 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:02:23 ===> ===========>Test begining!===========
+2024-12-07 20:02:23 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:02:23 ===> user=name of user
+2024-12-07 20:02:23 ===> experiment=UMIS
+2024-12-07 20:02:23 ===> date=2024-12-07
+2024-12-07 20:02:23 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:23 ===> start_epoch=112
+2024-12-07 20:02:23 ===> end_epochs=500
+2024-12-07 20:02:23 ===> submission=./results
+2024-12-07 20:02:23 ===> lambda_epochs=50
+2024-12-07 20:02:23 ===> save_freq=5
+2024-12-07 20:02:23 ===> lr=0.002
+2024-12-07 20:02:23 ===> savepath=./results/plot/output
+2024-12-07 20:02:23 ===> save_dir=./results
+2024-12-07 20:02:23 ===> mode=test
+2024-12-07 20:02:23 ===> dataset=DRIVE
+2024-12-07 20:02:23 ===> folder=folder0
+2024-12-07 20:02:23 ===> input_H=240
+2024-12-07 20:02:23 ===> input_W=240
+2024-12-07 20:02:23 ===> input_D=160
+2024-12-07 20:02:23 ===> crop_H=128
+2024-12-07 20:02:23 ===> crop_W=128
+2024-12-07 20:02:23 ===> crop_D=128
+2024-12-07 20:02:23 ===> output_D=155
+2024-12-07 20:02:23 ===> batch_size=2
+2024-12-07 20:02:23 ===> OOD_Condition=blur
+2024-12-07 20:02:23 ===> OOD_Level=1
+2024-12-07 20:02:23 ===> snapshot=True
+2024-12-07 20:02:23 ===> Uncertainty_Loss=True
+2024-12-07 20:02:23 ===> input_modality=four
+2024-12-07 20:02:23 ===> model_name=U
+2024-12-07 20:02:23 ===> test_epoch=112
+2024-12-07 20:02:23 ===> device=cpu
+2024-12-07 20:02:23 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:02:23 ===> aug_smooth=False
+2024-12-07 20:02:23 ===> eigen_smooth=False
+2024-12-07 20:02:23 ===> method=gradcam
+2024-12-07 20:02:23 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:02:23 ===> num_classes=2
+2024-12-07 20:02:23 ===> out_size=(584, 565)
+2024-12-07 20:02:23 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:02:23 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:23 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:23 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:23 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:23 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:24 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:02:24 ===> Single sample test time consumption 0.06 seconds!
+2024-12-07 20:02:24 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:24 ===> Single sample test time consumption 0.06 seconds!
+2024-12-07 20:02:24 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:02:24 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:02:24 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:02:24 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:02:24 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:02:24 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:02:24 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:02:24 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:02:24 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:02:24 ===> ===========>Test begining!===========
+2024-12-07 20:02:24 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:02:24 ===> user=name of user
+2024-12-07 20:02:24 ===> experiment=UMIS
+2024-12-07 20:02:24 ===> date=2024-12-07
+2024-12-07 20:02:24 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:24 ===> start_epoch=112
+2024-12-07 20:02:24 ===> end_epochs=500
+2024-12-07 20:02:24 ===> submission=./results
+2024-12-07 20:02:24 ===> lambda_epochs=50
+2024-12-07 20:02:24 ===> save_freq=5
+2024-12-07 20:02:24 ===> lr=0.002
+2024-12-07 20:02:24 ===> savepath=./results/plot/output
+2024-12-07 20:02:24 ===> save_dir=./results
+2024-12-07 20:02:24 ===> mode=test
+2024-12-07 20:02:24 ===> dataset=DRIVE
+2024-12-07 20:02:24 ===> folder=folder0
+2024-12-07 20:02:24 ===> input_H=240
+2024-12-07 20:02:24 ===> input_W=240
+2024-12-07 20:02:24 ===> input_D=160
+2024-12-07 20:02:24 ===> crop_H=128
+2024-12-07 20:02:24 ===> crop_W=128
+2024-12-07 20:02:24 ===> crop_D=128
+2024-12-07 20:02:24 ===> output_D=155
+2024-12-07 20:02:24 ===> batch_size=2
+2024-12-07 20:02:24 ===> OOD_Condition=blur
+2024-12-07 20:02:24 ===> OOD_Level=2
+2024-12-07 20:02:24 ===> snapshot=True
+2024-12-07 20:02:24 ===> Uncertainty_Loss=True
+2024-12-07 20:02:24 ===> input_modality=four
+2024-12-07 20:02:24 ===> model_name=U
+2024-12-07 20:02:24 ===> test_epoch=112
+2024-12-07 20:02:24 ===> device=cpu
+2024-12-07 20:02:24 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:02:24 ===> aug_smooth=False
+2024-12-07 20:02:24 ===> eigen_smooth=False
+2024-12-07 20:02:24 ===> method=gradcam
+2024-12-07 20:02:24 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:02:24 ===> num_classes=2
+2024-12-07 20:02:24 ===> out_size=(584, 565)
+2024-12-07 20:02:24 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:02:24 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:24 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:25 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:25 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:25 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:25 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:25 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:25 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:25 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:25 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:25 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:02:25 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:02:25 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:02:25 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:02:25 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:02:25 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:02:25 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:02:25 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:02:25 ===> ===========>Test begining!===========
+2024-12-07 20:02:25 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:02:25 ===> user=name of user
+2024-12-07 20:02:25 ===> experiment=UMIS
+2024-12-07 20:02:25 ===> date=2024-12-07
+2024-12-07 20:02:25 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:25 ===> start_epoch=112
+2024-12-07 20:02:25 ===> end_epochs=500
+2024-12-07 20:02:25 ===> submission=./results
+2024-12-07 20:02:25 ===> lambda_epochs=50
+2024-12-07 20:02:25 ===> save_freq=5
+2024-12-07 20:02:25 ===> lr=0.002
+2024-12-07 20:02:25 ===> savepath=./results/plot/output
+2024-12-07 20:02:25 ===> save_dir=./results
+2024-12-07 20:02:25 ===> mode=test
+2024-12-07 20:02:25 ===> dataset=DRIVE
+2024-12-07 20:02:25 ===> folder=folder0
+2024-12-07 20:02:25 ===> input_H=240
+2024-12-07 20:02:25 ===> input_W=240
+2024-12-07 20:02:25 ===> input_D=160
+2024-12-07 20:02:25 ===> crop_H=128
+2024-12-07 20:02:25 ===> crop_W=128
+2024-12-07 20:02:25 ===> crop_D=128
+2024-12-07 20:02:25 ===> output_D=155
+2024-12-07 20:02:25 ===> batch_size=2
+2024-12-07 20:02:25 ===> OOD_Condition=blur
+2024-12-07 20:02:25 ===> OOD_Level=3
+2024-12-07 20:02:25 ===> snapshot=True
+2024-12-07 20:02:25 ===> Uncertainty_Loss=True
+2024-12-07 20:02:25 ===> input_modality=four
+2024-12-07 20:02:25 ===> model_name=U
+2024-12-07 20:02:25 ===> test_epoch=112
+2024-12-07 20:02:25 ===> device=cpu
+2024-12-07 20:02:25 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:02:25 ===> aug_smooth=False
+2024-12-07 20:02:25 ===> eigen_smooth=False
+2024-12-07 20:02:25 ===> method=gradcam
+2024-12-07 20:02:25 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:02:25 ===> num_classes=2
+2024-12-07 20:02:25 ===> out_size=(584, 565)
+2024-12-07 20:02:25 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:02:25 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:02:26 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:02:26 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:02:26 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:26 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:26 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:26 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:26 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:26 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:27 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:02:27 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:02:27 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:02:27 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:02:27 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:02:27 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:02:27 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:02:27 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:02:27 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:06:51 ===> re-training!!!
+2024-12-07 20:06:51 ===> ===========>Test begining!===========
+2024-12-07 20:06:51 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:06:51 ===> user=name of user
+2024-12-07 20:06:51 ===> experiment=UMIS
+2024-12-07 20:06:51 ===> date=2024-12-07
+2024-12-07 20:06:51 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:06:51 ===> start_epoch=1
+2024-12-07 20:06:51 ===> end_epochs=500
+2024-12-07 20:06:51 ===> submission=./results
+2024-12-07 20:06:51 ===> lambda_epochs=50
+2024-12-07 20:06:51 ===> save_freq=5
+2024-12-07 20:06:51 ===> lr=0.002
+2024-12-07 20:06:51 ===> savepath=./results/plot/output
+2024-12-07 20:06:51 ===> save_dir=./results
+2024-12-07 20:06:51 ===> mode=test
+2024-12-07 20:06:51 ===> dataset=DRIVE
+2024-12-07 20:06:51 ===> folder=folder0
+2024-12-07 20:06:51 ===> input_H=240
+2024-12-07 20:06:51 ===> input_W=240
+2024-12-07 20:06:51 ===> input_D=160
+2024-12-07 20:06:51 ===> crop_H=128
+2024-12-07 20:06:51 ===> crop_W=128
+2024-12-07 20:06:51 ===> crop_D=128
+2024-12-07 20:06:51 ===> output_D=155
+2024-12-07 20:06:51 ===> batch_size=2
+2024-12-07 20:06:51 ===> OOD_Condition=noise
+2024-12-07 20:06:51 ===> OOD_Level=1
+2024-12-07 20:06:51 ===> snapshot=True
+2024-12-07 20:06:51 ===> Uncertainty_Loss=True
+2024-12-07 20:06:51 ===> input_modality=four
+2024-12-07 20:06:51 ===> model_name=U
+2024-12-07 20:06:51 ===> test_epoch=112
+2024-12-07 20:06:51 ===> device=cpu
+2024-12-07 20:06:51 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:06:51 ===> aug_smooth=False
+2024-12-07 20:06:51 ===> eigen_smooth=False
+2024-12-07 20:06:51 ===> method=gradcam
+2024-12-07 20:06:51 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:06:51 ===> num_classes=2
+2024-12-07 20:06:51 ===> out_size=(584, 565)
+2024-12-07 20:06:51 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:06:51 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:06:55 ===> Single sample test time consumption 3.64 seconds!
+2024-12-07 20:08:30 ===> re-training!!!
+2024-12-07 20:08:30 ===> ===========>Test begining!===========
+2024-12-07 20:08:30 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:08:30 ===> user=name of user
+2024-12-07 20:08:30 ===> experiment=UMIS
+2024-12-07 20:08:30 ===> date=2024-12-07
+2024-12-07 20:08:30 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:30 ===> start_epoch=1
+2024-12-07 20:08:30 ===> end_epochs=500
+2024-12-07 20:08:30 ===> submission=./results
+2024-12-07 20:08:30 ===> lambda_epochs=50
+2024-12-07 20:08:30 ===> save_freq=5
+2024-12-07 20:08:30 ===> lr=0.002
+2024-12-07 20:08:30 ===> savepath=./results/plot/output
+2024-12-07 20:08:30 ===> save_dir=./results
+2024-12-07 20:08:30 ===> mode=test
+2024-12-07 20:08:30 ===> dataset=DRIVE
+2024-12-07 20:08:30 ===> folder=folder0
+2024-12-07 20:08:30 ===> input_H=240
+2024-12-07 20:08:30 ===> input_W=240
+2024-12-07 20:08:30 ===> input_D=160
+2024-12-07 20:08:30 ===> crop_H=128
+2024-12-07 20:08:30 ===> crop_W=128
+2024-12-07 20:08:30 ===> crop_D=128
+2024-12-07 20:08:30 ===> output_D=155
+2024-12-07 20:08:30 ===> batch_size=2
+2024-12-07 20:08:30 ===> OOD_Condition=noise
+2024-12-07 20:08:30 ===> OOD_Level=1
+2024-12-07 20:08:30 ===> snapshot=True
+2024-12-07 20:08:30 ===> Uncertainty_Loss=True
+2024-12-07 20:08:30 ===> input_modality=four
+2024-12-07 20:08:30 ===> model_name=U
+2024-12-07 20:08:30 ===> test_epoch=112
+2024-12-07 20:08:30 ===> device=cpu
+2024-12-07 20:08:30 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:08:30 ===> aug_smooth=False
+2024-12-07 20:08:30 ===> eigen_smooth=False
+2024-12-07 20:08:30 ===> method=gradcam
+2024-12-07 20:08:30 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:08:30 ===> num_classes=2
+2024-12-07 20:08:30 ===> out_size=(584, 565)
+2024-12-07 20:08:30 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:08:30 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:36 ===> Single sample test time consumption 6.17 seconds!
+2024-12-07 20:08:36 ===> Single sample test time consumption 0.10 seconds!
+2024-12-07 20:08:37 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:08:37 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:37 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:08:37 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:08:37 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:08:37 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:08:37 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:08:37 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:08:37 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:08:37 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:08:37 ===> ===========>Test begining!===========
+2024-12-07 20:08:37 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:08:37 ===> user=name of user
+2024-12-07 20:08:37 ===> experiment=UMIS
+2024-12-07 20:08:37 ===> date=2024-12-07
+2024-12-07 20:08:37 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:37 ===> start_epoch=112
+2024-12-07 20:08:37 ===> end_epochs=500
+2024-12-07 20:08:37 ===> submission=./results
+2024-12-07 20:08:37 ===> lambda_epochs=50
+2024-12-07 20:08:37 ===> save_freq=5
+2024-12-07 20:08:37 ===> lr=0.002
+2024-12-07 20:08:37 ===> savepath=./results/plot/output
+2024-12-07 20:08:37 ===> save_dir=./results
+2024-12-07 20:08:37 ===> mode=test
+2024-12-07 20:08:37 ===> dataset=DRIVE
+2024-12-07 20:08:37 ===> folder=folder0
+2024-12-07 20:08:37 ===> input_H=240
+2024-12-07 20:08:37 ===> input_W=240
+2024-12-07 20:08:37 ===> input_D=160
+2024-12-07 20:08:37 ===> crop_H=128
+2024-12-07 20:08:37 ===> crop_W=128
+2024-12-07 20:08:37 ===> crop_D=128
+2024-12-07 20:08:37 ===> output_D=155
+2024-12-07 20:08:37 ===> batch_size=2
+2024-12-07 20:08:37 ===> OOD_Condition=noise
+2024-12-07 20:08:37 ===> OOD_Level=2
+2024-12-07 20:08:37 ===> snapshot=True
+2024-12-07 20:08:37 ===> Uncertainty_Loss=True
+2024-12-07 20:08:37 ===> input_modality=four
+2024-12-07 20:08:37 ===> model_name=U
+2024-12-07 20:08:37 ===> test_epoch=112
+2024-12-07 20:08:37 ===> device=cpu
+2024-12-07 20:08:37 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:08:37 ===> aug_smooth=False
+2024-12-07 20:08:37 ===> eigen_smooth=False
+2024-12-07 20:08:37 ===> method=gradcam
+2024-12-07 20:08:37 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:08:37 ===> num_classes=2
+2024-12-07 20:08:37 ===> out_size=(584, 565)
+2024-12-07 20:08:37 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:08:37 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:38 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:38 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:38 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:08:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:39 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:08:39 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:08:39 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:08:39 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:08:39 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:08:39 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:08:39 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:08:39 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:08:39 ===> ===========>Test begining!===========
+2024-12-07 20:08:39 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:08:39 ===> user=name of user
+2024-12-07 20:08:39 ===> experiment=UMIS
+2024-12-07 20:08:39 ===> date=2024-12-07
+2024-12-07 20:08:39 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:39 ===> start_epoch=112
+2024-12-07 20:08:39 ===> end_epochs=500
+2024-12-07 20:08:39 ===> submission=./results
+2024-12-07 20:08:39 ===> lambda_epochs=50
+2024-12-07 20:08:39 ===> save_freq=5
+2024-12-07 20:08:39 ===> lr=0.002
+2024-12-07 20:08:39 ===> savepath=./results/plot/output
+2024-12-07 20:08:39 ===> save_dir=./results
+2024-12-07 20:08:39 ===> mode=test
+2024-12-07 20:08:39 ===> dataset=DRIVE
+2024-12-07 20:08:39 ===> folder=folder0
+2024-12-07 20:08:39 ===> input_H=240
+2024-12-07 20:08:39 ===> input_W=240
+2024-12-07 20:08:39 ===> input_D=160
+2024-12-07 20:08:39 ===> crop_H=128
+2024-12-07 20:08:39 ===> crop_W=128
+2024-12-07 20:08:39 ===> crop_D=128
+2024-12-07 20:08:39 ===> output_D=155
+2024-12-07 20:08:39 ===> batch_size=2
+2024-12-07 20:08:39 ===> OOD_Condition=noise
+2024-12-07 20:08:39 ===> OOD_Level=3
+2024-12-07 20:08:39 ===> snapshot=True
+2024-12-07 20:08:39 ===> Uncertainty_Loss=True
+2024-12-07 20:08:39 ===> input_modality=four
+2024-12-07 20:08:39 ===> model_name=U
+2024-12-07 20:08:39 ===> test_epoch=112
+2024-12-07 20:08:39 ===> device=cpu
+2024-12-07 20:08:39 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:08:39 ===> aug_smooth=False
+2024-12-07 20:08:39 ===> eigen_smooth=False
+2024-12-07 20:08:39 ===> method=gradcam
+2024-12-07 20:08:39 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:08:39 ===> num_classes=2
+2024-12-07 20:08:39 ===> out_size=(584, 565)
+2024-12-07 20:08:39 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:08:39 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:40 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:08:40 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:40 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:40 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:40 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:40 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:08:40 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:08:40 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:08:40 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:08:40 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:08:40 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:08:40 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:08:40 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:08:40 ===> ===========>Test begining!===========
+2024-12-07 20:08:40 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:08:40 ===> user=name of user
+2024-12-07 20:08:40 ===> experiment=UMIS
+2024-12-07 20:08:40 ===> date=2024-12-07
+2024-12-07 20:08:40 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:40 ===> start_epoch=112
+2024-12-07 20:08:40 ===> end_epochs=500
+2024-12-07 20:08:40 ===> submission=./results
+2024-12-07 20:08:40 ===> lambda_epochs=50
+2024-12-07 20:08:40 ===> save_freq=5
+2024-12-07 20:08:40 ===> lr=0.002
+2024-12-07 20:08:40 ===> savepath=./results/plot/output
+2024-12-07 20:08:40 ===> save_dir=./results
+2024-12-07 20:08:40 ===> mode=test
+2024-12-07 20:08:40 ===> dataset=DRIVE
+2024-12-07 20:08:40 ===> folder=folder0
+2024-12-07 20:08:40 ===> input_H=240
+2024-12-07 20:08:40 ===> input_W=240
+2024-12-07 20:08:40 ===> input_D=160
+2024-12-07 20:08:40 ===> crop_H=128
+2024-12-07 20:08:40 ===> crop_W=128
+2024-12-07 20:08:40 ===> crop_D=128
+2024-12-07 20:08:40 ===> output_D=155
+2024-12-07 20:08:40 ===> batch_size=2
+2024-12-07 20:08:40 ===> OOD_Condition=blur
+2024-12-07 20:08:40 ===> OOD_Level=1
+2024-12-07 20:08:40 ===> snapshot=True
+2024-12-07 20:08:40 ===> Uncertainty_Loss=True
+2024-12-07 20:08:40 ===> input_modality=four
+2024-12-07 20:08:40 ===> model_name=U
+2024-12-07 20:08:40 ===> test_epoch=112
+2024-12-07 20:08:40 ===> device=cpu
+2024-12-07 20:08:40 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:08:40 ===> aug_smooth=False
+2024-12-07 20:08:40 ===> eigen_smooth=False
+2024-12-07 20:08:40 ===> method=gradcam
+2024-12-07 20:08:40 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:08:40 ===> num_classes=2
+2024-12-07 20:08:40 ===> out_size=(584, 565)
+2024-12-07 20:08:40 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:08:40 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:41 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:41 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:42 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:42 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:42 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:42 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:08:42 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:08:42 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:08:42 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:08:42 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:08:42 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:08:42 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:08:42 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:08:42 ===> ===========>Test begining!===========
+2024-12-07 20:08:42 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:08:42 ===> user=name of user
+2024-12-07 20:08:42 ===> experiment=UMIS
+2024-12-07 20:08:42 ===> date=2024-12-07
+2024-12-07 20:08:42 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:42 ===> start_epoch=112
+2024-12-07 20:08:42 ===> end_epochs=500
+2024-12-07 20:08:42 ===> submission=./results
+2024-12-07 20:08:42 ===> lambda_epochs=50
+2024-12-07 20:08:42 ===> save_freq=5
+2024-12-07 20:08:42 ===> lr=0.002
+2024-12-07 20:08:42 ===> savepath=./results/plot/output
+2024-12-07 20:08:42 ===> save_dir=./results
+2024-12-07 20:08:42 ===> mode=test
+2024-12-07 20:08:42 ===> dataset=DRIVE
+2024-12-07 20:08:42 ===> folder=folder0
+2024-12-07 20:08:42 ===> input_H=240
+2024-12-07 20:08:42 ===> input_W=240
+2024-12-07 20:08:42 ===> input_D=160
+2024-12-07 20:08:42 ===> crop_H=128
+2024-12-07 20:08:42 ===> crop_W=128
+2024-12-07 20:08:42 ===> crop_D=128
+2024-12-07 20:08:42 ===> output_D=155
+2024-12-07 20:08:42 ===> batch_size=2
+2024-12-07 20:08:42 ===> OOD_Condition=blur
+2024-12-07 20:08:42 ===> OOD_Level=2
+2024-12-07 20:08:42 ===> snapshot=True
+2024-12-07 20:08:42 ===> Uncertainty_Loss=True
+2024-12-07 20:08:42 ===> input_modality=four
+2024-12-07 20:08:42 ===> model_name=U
+2024-12-07 20:08:42 ===> test_epoch=112
+2024-12-07 20:08:42 ===> device=cpu
+2024-12-07 20:08:42 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:08:42 ===> aug_smooth=False
+2024-12-07 20:08:42 ===> eigen_smooth=False
+2024-12-07 20:08:42 ===> method=gradcam
+2024-12-07 20:08:42 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:08:42 ===> num_classes=2
+2024-12-07 20:08:42 ===> out_size=(584, 565)
+2024-12-07 20:08:42 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:08:42 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:42 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:42 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:43 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:43 ===> Single sample test time consumption 0.06 seconds!
+2024-12-07 20:08:43 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:43 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:43 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:08:43 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:08:43 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:08:43 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:08:43 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:08:43 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:08:43 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:08:43 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:08:43 ===> ===========>Test begining!===========
+2024-12-07 20:08:43 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:08:43 ===> user=name of user
+2024-12-07 20:08:43 ===> experiment=UMIS
+2024-12-07 20:08:43 ===> date=2024-12-07
+2024-12-07 20:08:43 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:43 ===> start_epoch=112
+2024-12-07 20:08:43 ===> end_epochs=500
+2024-12-07 20:08:43 ===> submission=./results
+2024-12-07 20:08:43 ===> lambda_epochs=50
+2024-12-07 20:08:43 ===> save_freq=5
+2024-12-07 20:08:43 ===> lr=0.002
+2024-12-07 20:08:43 ===> savepath=./results/plot/output
+2024-12-07 20:08:43 ===> save_dir=./results
+2024-12-07 20:08:43 ===> mode=test
+2024-12-07 20:08:43 ===> dataset=DRIVE
+2024-12-07 20:08:43 ===> folder=folder0
+2024-12-07 20:08:43 ===> input_H=240
+2024-12-07 20:08:43 ===> input_W=240
+2024-12-07 20:08:43 ===> input_D=160
+2024-12-07 20:08:43 ===> crop_H=128
+2024-12-07 20:08:43 ===> crop_W=128
+2024-12-07 20:08:43 ===> crop_D=128
+2024-12-07 20:08:43 ===> output_D=155
+2024-12-07 20:08:43 ===> batch_size=2
+2024-12-07 20:08:43 ===> OOD_Condition=blur
+2024-12-07 20:08:43 ===> OOD_Level=3
+2024-12-07 20:08:43 ===> snapshot=True
+2024-12-07 20:08:43 ===> Uncertainty_Loss=True
+2024-12-07 20:08:43 ===> input_modality=four
+2024-12-07 20:08:43 ===> model_name=U
+2024-12-07 20:08:43 ===> test_epoch=112
+2024-12-07 20:08:43 ===> device=cpu
+2024-12-07 20:08:43 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:08:43 ===> aug_smooth=False
+2024-12-07 20:08:43 ===> eigen_smooth=False
+2024-12-07 20:08:43 ===> method=gradcam
+2024-12-07 20:08:43 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:08:43 ===> num_classes=2
+2024-12-07 20:08:43 ===> out_size=(584, 565)
+2024-12-07 20:08:43 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:08:43 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:08:44 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:44 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:44 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:44 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:44 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:08:44 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:08:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:45 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:08:45 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:08:45 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:08:45 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:08:45 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:08:45 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:08:45 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:08:45 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:08:45 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:29:29 ===> re-training!!!
+2024-12-07 20:29:29 ===> ===========>Test begining!===========
+2024-12-07 20:29:29 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:29:29 ===> user=name of user
+2024-12-07 20:29:29 ===> experiment=UMIS
+2024-12-07 20:29:29 ===> date=2024-12-07
+2024-12-07 20:29:29 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:29 ===> start_epoch=1
+2024-12-07 20:29:29 ===> end_epochs=500
+2024-12-07 20:29:29 ===> submission=./results
+2024-12-07 20:29:29 ===> lambda_epochs=50
+2024-12-07 20:29:29 ===> save_freq=5
+2024-12-07 20:29:29 ===> lr=0.002
+2024-12-07 20:29:29 ===> savepath=./results/plot/output
+2024-12-07 20:29:29 ===> save_dir=./results
+2024-12-07 20:29:29 ===> mode=test
+2024-12-07 20:29:29 ===> dataset=DRIVE
+2024-12-07 20:29:29 ===> folder=folder0
+2024-12-07 20:29:29 ===> input_H=240
+2024-12-07 20:29:29 ===> input_W=240
+2024-12-07 20:29:29 ===> input_D=160
+2024-12-07 20:29:29 ===> crop_H=128
+2024-12-07 20:29:29 ===> crop_W=128
+2024-12-07 20:29:29 ===> crop_D=128
+2024-12-07 20:29:29 ===> output_D=155
+2024-12-07 20:29:29 ===> batch_size=2
+2024-12-07 20:29:29 ===> OOD_Condition=noise
+2024-12-07 20:29:29 ===> OOD_Level=1
+2024-12-07 20:29:29 ===> snapshot=True
+2024-12-07 20:29:29 ===> Uncertainty_Loss=True
+2024-12-07 20:29:29 ===> input_modality=four
+2024-12-07 20:29:29 ===> model_name=U
+2024-12-07 20:29:29 ===> test_epoch=112
+2024-12-07 20:29:29 ===> device=cpu
+2024-12-07 20:29:29 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:29:29 ===> aug_smooth=False
+2024-12-07 20:29:29 ===> eigen_smooth=False
+2024-12-07 20:29:29 ===> method=gradcam
+2024-12-07 20:29:29 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:29:29 ===> num_classes=2
+2024-12-07 20:29:29 ===> out_size=(584, 565)
+2024-12-07 20:29:29 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:29:29 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:33 ===> Single sample test time consumption 3.76 seconds!
+2024-12-07 20:29:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:33 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:33 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:34 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:34 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:29:34 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:29:34 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:29:34 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:29:34 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:29:34 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:29:34 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:29:34 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:29:34 ===> ===========>Test begining!===========
+2024-12-07 20:29:34 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:29:34 ===> user=name of user
+2024-12-07 20:29:34 ===> experiment=UMIS
+2024-12-07 20:29:34 ===> date=2024-12-07
+2024-12-07 20:29:34 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:34 ===> start_epoch=112
+2024-12-07 20:29:34 ===> end_epochs=500
+2024-12-07 20:29:34 ===> submission=./results
+2024-12-07 20:29:34 ===> lambda_epochs=50
+2024-12-07 20:29:34 ===> save_freq=5
+2024-12-07 20:29:34 ===> lr=0.002
+2024-12-07 20:29:34 ===> savepath=./results/plot/output
+2024-12-07 20:29:34 ===> save_dir=./results
+2024-12-07 20:29:34 ===> mode=test
+2024-12-07 20:29:34 ===> dataset=DRIVE
+2024-12-07 20:29:34 ===> folder=folder0
+2024-12-07 20:29:34 ===> input_H=240
+2024-12-07 20:29:34 ===> input_W=240
+2024-12-07 20:29:34 ===> input_D=160
+2024-12-07 20:29:34 ===> crop_H=128
+2024-12-07 20:29:34 ===> crop_W=128
+2024-12-07 20:29:34 ===> crop_D=128
+2024-12-07 20:29:34 ===> output_D=155
+2024-12-07 20:29:34 ===> batch_size=2
+2024-12-07 20:29:34 ===> OOD_Condition=noise
+2024-12-07 20:29:34 ===> OOD_Level=2
+2024-12-07 20:29:34 ===> snapshot=True
+2024-12-07 20:29:34 ===> Uncertainty_Loss=True
+2024-12-07 20:29:34 ===> input_modality=four
+2024-12-07 20:29:34 ===> model_name=U
+2024-12-07 20:29:34 ===> test_epoch=112
+2024-12-07 20:29:34 ===> device=cpu
+2024-12-07 20:29:34 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:29:34 ===> aug_smooth=False
+2024-12-07 20:29:34 ===> eigen_smooth=False
+2024-12-07 20:29:34 ===> method=gradcam
+2024-12-07 20:29:34 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:29:34 ===> num_classes=2
+2024-12-07 20:29:34 ===> out_size=(584, 565)
+2024-12-07 20:29:34 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:29:34 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:34 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 20:29:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:34 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:34 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:35 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:29:35 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:29:35 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:29:35 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:29:35 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:29:35 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:29:35 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:29:35 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:29:35 ===> ===========>Test begining!===========
+2024-12-07 20:29:35 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:29:35 ===> user=name of user
+2024-12-07 20:29:35 ===> experiment=UMIS
+2024-12-07 20:29:35 ===> date=2024-12-07
+2024-12-07 20:29:35 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:35 ===> start_epoch=112
+2024-12-07 20:29:35 ===> end_epochs=500
+2024-12-07 20:29:35 ===> submission=./results
+2024-12-07 20:29:35 ===> lambda_epochs=50
+2024-12-07 20:29:35 ===> save_freq=5
+2024-12-07 20:29:35 ===> lr=0.002
+2024-12-07 20:29:35 ===> savepath=./results/plot/output
+2024-12-07 20:29:35 ===> save_dir=./results
+2024-12-07 20:29:35 ===> mode=test
+2024-12-07 20:29:35 ===> dataset=DRIVE
+2024-12-07 20:29:35 ===> folder=folder0
+2024-12-07 20:29:35 ===> input_H=240
+2024-12-07 20:29:35 ===> input_W=240
+2024-12-07 20:29:35 ===> input_D=160
+2024-12-07 20:29:35 ===> crop_H=128
+2024-12-07 20:29:35 ===> crop_W=128
+2024-12-07 20:29:35 ===> crop_D=128
+2024-12-07 20:29:35 ===> output_D=155
+2024-12-07 20:29:35 ===> batch_size=2
+2024-12-07 20:29:35 ===> OOD_Condition=noise
+2024-12-07 20:29:35 ===> OOD_Level=3
+2024-12-07 20:29:35 ===> snapshot=True
+2024-12-07 20:29:35 ===> Uncertainty_Loss=True
+2024-12-07 20:29:35 ===> input_modality=four
+2024-12-07 20:29:35 ===> model_name=U
+2024-12-07 20:29:35 ===> test_epoch=112
+2024-12-07 20:29:35 ===> device=cpu
+2024-12-07 20:29:35 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:29:35 ===> aug_smooth=False
+2024-12-07 20:29:35 ===> eigen_smooth=False
+2024-12-07 20:29:35 ===> method=gradcam
+2024-12-07 20:29:35 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:29:35 ===> num_classes=2
+2024-12-07 20:29:35 ===> out_size=(584, 565)
+2024-12-07 20:29:35 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:29:35 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:35 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 20:29:35 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:35 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:35 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:36 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:36 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:29:36 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:29:36 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:29:36 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:29:36 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:29:36 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:29:36 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:29:36 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:29:36 ===> ===========>Test begining!===========
+2024-12-07 20:29:36 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:29:36 ===> user=name of user
+2024-12-07 20:29:36 ===> experiment=UMIS
+2024-12-07 20:29:36 ===> date=2024-12-07
+2024-12-07 20:29:36 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:36 ===> start_epoch=112
+2024-12-07 20:29:36 ===> end_epochs=500
+2024-12-07 20:29:36 ===> submission=./results
+2024-12-07 20:29:36 ===> lambda_epochs=50
+2024-12-07 20:29:36 ===> save_freq=5
+2024-12-07 20:29:36 ===> lr=0.002
+2024-12-07 20:29:36 ===> savepath=./results/plot/output
+2024-12-07 20:29:36 ===> save_dir=./results
+2024-12-07 20:29:36 ===> mode=test
+2024-12-07 20:29:36 ===> dataset=DRIVE
+2024-12-07 20:29:36 ===> folder=folder0
+2024-12-07 20:29:36 ===> input_H=240
+2024-12-07 20:29:36 ===> input_W=240
+2024-12-07 20:29:36 ===> input_D=160
+2024-12-07 20:29:36 ===> crop_H=128
+2024-12-07 20:29:36 ===> crop_W=128
+2024-12-07 20:29:36 ===> crop_D=128
+2024-12-07 20:29:36 ===> output_D=155
+2024-12-07 20:29:36 ===> batch_size=2
+2024-12-07 20:29:36 ===> OOD_Condition=blur
+2024-12-07 20:29:36 ===> OOD_Level=1
+2024-12-07 20:29:36 ===> snapshot=True
+2024-12-07 20:29:36 ===> Uncertainty_Loss=True
+2024-12-07 20:29:36 ===> input_modality=four
+2024-12-07 20:29:36 ===> model_name=U
+2024-12-07 20:29:36 ===> test_epoch=112
+2024-12-07 20:29:36 ===> device=cpu
+2024-12-07 20:29:36 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:29:36 ===> aug_smooth=False
+2024-12-07 20:29:36 ===> eigen_smooth=False
+2024-12-07 20:29:36 ===> method=gradcam
+2024-12-07 20:29:36 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:29:36 ===> num_classes=2
+2024-12-07 20:29:36 ===> out_size=(584, 565)
+2024-12-07 20:29:36 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:29:36 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:36 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:36 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:36 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:29:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:37 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:37 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:29:37 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:29:37 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:29:37 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:29:37 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:29:37 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:29:37 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:29:37 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:29:37 ===> ===========>Test begining!===========
+2024-12-07 20:29:37 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:29:37 ===> user=name of user
+2024-12-07 20:29:37 ===> experiment=UMIS
+2024-12-07 20:29:37 ===> date=2024-12-07
+2024-12-07 20:29:37 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:37 ===> start_epoch=112
+2024-12-07 20:29:37 ===> end_epochs=500
+2024-12-07 20:29:37 ===> submission=./results
+2024-12-07 20:29:37 ===> lambda_epochs=50
+2024-12-07 20:29:37 ===> save_freq=5
+2024-12-07 20:29:37 ===> lr=0.002
+2024-12-07 20:29:37 ===> savepath=./results/plot/output
+2024-12-07 20:29:37 ===> save_dir=./results
+2024-12-07 20:29:37 ===> mode=test
+2024-12-07 20:29:37 ===> dataset=DRIVE
+2024-12-07 20:29:37 ===> folder=folder0
+2024-12-07 20:29:37 ===> input_H=240
+2024-12-07 20:29:37 ===> input_W=240
+2024-12-07 20:29:37 ===> input_D=160
+2024-12-07 20:29:37 ===> crop_H=128
+2024-12-07 20:29:37 ===> crop_W=128
+2024-12-07 20:29:37 ===> crop_D=128
+2024-12-07 20:29:37 ===> output_D=155
+2024-12-07 20:29:37 ===> batch_size=2
+2024-12-07 20:29:37 ===> OOD_Condition=blur
+2024-12-07 20:29:37 ===> OOD_Level=2
+2024-12-07 20:29:37 ===> snapshot=True
+2024-12-07 20:29:37 ===> Uncertainty_Loss=True
+2024-12-07 20:29:37 ===> input_modality=four
+2024-12-07 20:29:37 ===> model_name=U
+2024-12-07 20:29:37 ===> test_epoch=112
+2024-12-07 20:29:37 ===> device=cpu
+2024-12-07 20:29:37 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:29:37 ===> aug_smooth=False
+2024-12-07 20:29:37 ===> eigen_smooth=False
+2024-12-07 20:29:37 ===> method=gradcam
+2024-12-07 20:29:37 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:29:37 ===> num_classes=2
+2024-12-07 20:29:37 ===> out_size=(584, 565)
+2024-12-07 20:29:37 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:29:37 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:37 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:37 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:38 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 20:29:38 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:38 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:29:38 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:29:38 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:29:38 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:29:38 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:29:38 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:29:38 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:29:38 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:29:38 ===> ===========>Test begining!===========
+2024-12-07 20:29:38 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:29:38 ===> user=name of user
+2024-12-07 20:29:38 ===> experiment=UMIS
+2024-12-07 20:29:38 ===> date=2024-12-07
+2024-12-07 20:29:38 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:38 ===> start_epoch=112
+2024-12-07 20:29:38 ===> end_epochs=500
+2024-12-07 20:29:38 ===> submission=./results
+2024-12-07 20:29:38 ===> lambda_epochs=50
+2024-12-07 20:29:38 ===> save_freq=5
+2024-12-07 20:29:38 ===> lr=0.002
+2024-12-07 20:29:38 ===> savepath=./results/plot/output
+2024-12-07 20:29:38 ===> save_dir=./results
+2024-12-07 20:29:38 ===> mode=test
+2024-12-07 20:29:38 ===> dataset=DRIVE
+2024-12-07 20:29:38 ===> folder=folder0
+2024-12-07 20:29:38 ===> input_H=240
+2024-12-07 20:29:38 ===> input_W=240
+2024-12-07 20:29:38 ===> input_D=160
+2024-12-07 20:29:38 ===> crop_H=128
+2024-12-07 20:29:38 ===> crop_W=128
+2024-12-07 20:29:38 ===> crop_D=128
+2024-12-07 20:29:38 ===> output_D=155
+2024-12-07 20:29:38 ===> batch_size=2
+2024-12-07 20:29:38 ===> OOD_Condition=blur
+2024-12-07 20:29:38 ===> OOD_Level=3
+2024-12-07 20:29:38 ===> snapshot=True
+2024-12-07 20:29:38 ===> Uncertainty_Loss=True
+2024-12-07 20:29:38 ===> input_modality=four
+2024-12-07 20:29:38 ===> model_name=U
+2024-12-07 20:29:38 ===> test_epoch=112
+2024-12-07 20:29:38 ===> device=cpu
+2024-12-07 20:29:38 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:29:38 ===> aug_smooth=False
+2024-12-07 20:29:38 ===> eigen_smooth=False
+2024-12-07 20:29:38 ===> method=gradcam
+2024-12-07 20:29:38 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:29:38 ===> num_classes=2
+2024-12-07 20:29:38 ===> out_size=(584, 565)
+2024-12-07 20:29:38 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:29:38 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:29:38 ===> Single sample test time consumption 0.04 seconds!
+2024-12-07 20:29:38 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:39 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:39 ===> Single sample test time consumption 0.02 seconds!
+2024-12-07 20:29:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:39 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:29:39 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:29:39 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:29:39 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:29:39 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:29:39 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:29:39 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:29:39 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:29:39 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:30:59 ===> re-training!!!
+2024-12-07 20:30:59 ===> ===========>Test begining!===========
+2024-12-07 20:30:59 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:30:59 ===> user=name of user
+2024-12-07 20:30:59 ===> experiment=UMIS
+2024-12-07 20:30:59 ===> date=2024-12-07
+2024-12-07 20:30:59 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:30:59 ===> start_epoch=1
+2024-12-07 20:30:59 ===> end_epochs=500
+2024-12-07 20:30:59 ===> submission=./results
+2024-12-07 20:30:59 ===> lambda_epochs=50
+2024-12-07 20:30:59 ===> save_freq=5
+2024-12-07 20:30:59 ===> lr=0.002
+2024-12-07 20:30:59 ===> savepath=./results/plot/output
+2024-12-07 20:30:59 ===> save_dir=./results
+2024-12-07 20:30:59 ===> mode=test
+2024-12-07 20:30:59 ===> dataset=DRIVE
+2024-12-07 20:30:59 ===> folder=folder0
+2024-12-07 20:30:59 ===> input_H=240
+2024-12-07 20:30:59 ===> input_W=240
+2024-12-07 20:30:59 ===> input_D=160
+2024-12-07 20:30:59 ===> crop_H=128
+2024-12-07 20:30:59 ===> crop_W=128
+2024-12-07 20:30:59 ===> crop_D=128
+2024-12-07 20:30:59 ===> output_D=155
+2024-12-07 20:30:59 ===> batch_size=2
+2024-12-07 20:30:59 ===> OOD_Condition=noise
+2024-12-07 20:30:59 ===> OOD_Level=1
+2024-12-07 20:30:59 ===> snapshot=True
+2024-12-07 20:30:59 ===> Uncertainty_Loss=True
+2024-12-07 20:30:59 ===> input_modality=four
+2024-12-07 20:30:59 ===> model_name=U
+2024-12-07 20:30:59 ===> test_epoch=177
+2024-12-07 20:30:59 ===> device=cpu
+2024-12-07 20:30:59 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:30:59 ===> aug_smooth=False
+2024-12-07 20:30:59 ===> eigen_smooth=False
+2024-12-07 20:30:59 ===> method=gradcam
+2024-12-07 20:30:59 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:30:59 ===> num_classes=2
+2024-12-07 20:30:59 ===> out_size=(584, 565)
+2024-12-07 20:30:59 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:30:59 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:06 ===> Single sample test time consumption 6.21 seconds!
+2024-12-07 20:31:06 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:31:06 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:31:06 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:31:06 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:06 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:06 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:06 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:07 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:07 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:31:07 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:31:07 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:31:07 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:31:07 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:31:07 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:31:07 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:31:07 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:31:07 ===> ===========>Test begining!===========
+2024-12-07 20:31:07 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:31:07 ===> user=name of user
+2024-12-07 20:31:07 ===> experiment=UMIS
+2024-12-07 20:31:07 ===> date=2024-12-07
+2024-12-07 20:31:07 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:07 ===> start_epoch=177
+2024-12-07 20:31:07 ===> end_epochs=500
+2024-12-07 20:31:07 ===> submission=./results
+2024-12-07 20:31:07 ===> lambda_epochs=50
+2024-12-07 20:31:07 ===> save_freq=5
+2024-12-07 20:31:07 ===> lr=0.002
+2024-12-07 20:31:07 ===> savepath=./results/plot/output
+2024-12-07 20:31:07 ===> save_dir=./results
+2024-12-07 20:31:07 ===> mode=test
+2024-12-07 20:31:07 ===> dataset=DRIVE
+2024-12-07 20:31:07 ===> folder=folder0
+2024-12-07 20:31:07 ===> input_H=240
+2024-12-07 20:31:07 ===> input_W=240
+2024-12-07 20:31:07 ===> input_D=160
+2024-12-07 20:31:07 ===> crop_H=128
+2024-12-07 20:31:07 ===> crop_W=128
+2024-12-07 20:31:07 ===> crop_D=128
+2024-12-07 20:31:07 ===> output_D=155
+2024-12-07 20:31:07 ===> batch_size=2
+2024-12-07 20:31:07 ===> OOD_Condition=noise
+2024-12-07 20:31:07 ===> OOD_Level=2
+2024-12-07 20:31:07 ===> snapshot=True
+2024-12-07 20:31:07 ===> Uncertainty_Loss=True
+2024-12-07 20:31:07 ===> input_modality=four
+2024-12-07 20:31:07 ===> model_name=U
+2024-12-07 20:31:07 ===> test_epoch=177
+2024-12-07 20:31:07 ===> device=cpu
+2024-12-07 20:31:07 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:31:07 ===> aug_smooth=False
+2024-12-07 20:31:07 ===> eigen_smooth=False
+2024-12-07 20:31:07 ===> method=gradcam
+2024-12-07 20:31:07 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:31:07 ===> num_classes=2
+2024-12-07 20:31:07 ===> out_size=(584, 565)
+2024-12-07 20:31:07 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:31:07 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:07 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:07 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:07 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:31:07 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:31:07 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:31:08 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:31:08 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:08 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:08 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:08 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:31:08 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:31:08 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:31:08 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:31:08 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:31:08 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:31:08 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:31:08 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:31:08 ===> ===========>Test begining!===========
+2024-12-07 20:31:08 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:31:08 ===> user=name of user
+2024-12-07 20:31:08 ===> experiment=UMIS
+2024-12-07 20:31:08 ===> date=2024-12-07
+2024-12-07 20:31:08 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:08 ===> start_epoch=177
+2024-12-07 20:31:08 ===> end_epochs=500
+2024-12-07 20:31:08 ===> submission=./results
+2024-12-07 20:31:08 ===> lambda_epochs=50
+2024-12-07 20:31:08 ===> save_freq=5
+2024-12-07 20:31:08 ===> lr=0.002
+2024-12-07 20:31:08 ===> savepath=./results/plot/output
+2024-12-07 20:31:08 ===> save_dir=./results
+2024-12-07 20:31:08 ===> mode=test
+2024-12-07 20:31:08 ===> dataset=DRIVE
+2024-12-07 20:31:08 ===> folder=folder0
+2024-12-07 20:31:08 ===> input_H=240
+2024-12-07 20:31:08 ===> input_W=240
+2024-12-07 20:31:08 ===> input_D=160
+2024-12-07 20:31:08 ===> crop_H=128
+2024-12-07 20:31:08 ===> crop_W=128
+2024-12-07 20:31:08 ===> crop_D=128
+2024-12-07 20:31:08 ===> output_D=155
+2024-12-07 20:31:08 ===> batch_size=2
+2024-12-07 20:31:08 ===> OOD_Condition=noise
+2024-12-07 20:31:08 ===> OOD_Level=3
+2024-12-07 20:31:08 ===> snapshot=True
+2024-12-07 20:31:08 ===> Uncertainty_Loss=True
+2024-12-07 20:31:08 ===> input_modality=four
+2024-12-07 20:31:08 ===> model_name=U
+2024-12-07 20:31:08 ===> test_epoch=177
+2024-12-07 20:31:08 ===> device=cpu
+2024-12-07 20:31:08 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:31:08 ===> aug_smooth=False
+2024-12-07 20:31:08 ===> eigen_smooth=False
+2024-12-07 20:31:08 ===> method=gradcam
+2024-12-07 20:31:08 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:31:08 ===> num_classes=2
+2024-12-07 20:31:08 ===> out_size=(584, 565)
+2024-12-07 20:31:08 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:31:08 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:08 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:08 ===> Single sample test time consumption 0.06 seconds!
+2024-12-07 20:31:09 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:31:09 ===> Single sample test time consumption 0.07 seconds!
+2024-12-07 20:31:09 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:09 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:09 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:09 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:31:09 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:31:09 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:31:09 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:31:09 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:31:09 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:31:09 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:31:09 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:31:09 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:31:09 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:31:09 ===> ===========>Test begining!===========
+2024-12-07 20:31:09 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:31:09 ===> user=name of user
+2024-12-07 20:31:09 ===> experiment=UMIS
+2024-12-07 20:31:09 ===> date=2024-12-07
+2024-12-07 20:31:09 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:09 ===> start_epoch=177
+2024-12-07 20:31:09 ===> end_epochs=500
+2024-12-07 20:31:09 ===> submission=./results
+2024-12-07 20:31:09 ===> lambda_epochs=50
+2024-12-07 20:31:09 ===> save_freq=5
+2024-12-07 20:31:09 ===> lr=0.002
+2024-12-07 20:31:09 ===> savepath=./results/plot/output
+2024-12-07 20:31:09 ===> save_dir=./results
+2024-12-07 20:31:09 ===> mode=test
+2024-12-07 20:31:09 ===> dataset=DRIVE
+2024-12-07 20:31:09 ===> folder=folder0
+2024-12-07 20:31:09 ===> input_H=240
+2024-12-07 20:31:09 ===> input_W=240
+2024-12-07 20:31:09 ===> input_D=160
+2024-12-07 20:31:09 ===> crop_H=128
+2024-12-07 20:31:09 ===> crop_W=128
+2024-12-07 20:31:09 ===> crop_D=128
+2024-12-07 20:31:09 ===> output_D=155
+2024-12-07 20:31:09 ===> batch_size=2
+2024-12-07 20:31:09 ===> OOD_Condition=blur
+2024-12-07 20:31:09 ===> OOD_Level=1
+2024-12-07 20:31:09 ===> snapshot=True
+2024-12-07 20:31:09 ===> Uncertainty_Loss=True
+2024-12-07 20:31:09 ===> input_modality=four
+2024-12-07 20:31:09 ===> model_name=U
+2024-12-07 20:31:09 ===> test_epoch=177
+2024-12-07 20:31:09 ===> device=cpu
+2024-12-07 20:31:09 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:31:09 ===> aug_smooth=False
+2024-12-07 20:31:09 ===> eigen_smooth=False
+2024-12-07 20:31:09 ===> method=gradcam
+2024-12-07 20:31:09 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:31:09 ===> num_classes=2
+2024-12-07 20:31:09 ===> out_size=(584, 565)
+2024-12-07 20:31:09 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:31:09 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:10 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:10 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:10 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:10 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:10 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:10 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:11 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:11 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:11 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:11 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:31:11 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:31:11 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:31:11 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:31:11 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:31:11 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:31:11 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:31:11 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:31:11 ===> ===========>Test begining!===========
+2024-12-07 20:31:11 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:31:11 ===> user=name of user
+2024-12-07 20:31:11 ===> experiment=UMIS
+2024-12-07 20:31:11 ===> date=2024-12-07
+2024-12-07 20:31:11 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:11 ===> start_epoch=177
+2024-12-07 20:31:11 ===> end_epochs=500
+2024-12-07 20:31:11 ===> submission=./results
+2024-12-07 20:31:11 ===> lambda_epochs=50
+2024-12-07 20:31:11 ===> save_freq=5
+2024-12-07 20:31:11 ===> lr=0.002
+2024-12-07 20:31:11 ===> savepath=./results/plot/output
+2024-12-07 20:31:11 ===> save_dir=./results
+2024-12-07 20:31:11 ===> mode=test
+2024-12-07 20:31:11 ===> dataset=DRIVE
+2024-12-07 20:31:11 ===> folder=folder0
+2024-12-07 20:31:11 ===> input_H=240
+2024-12-07 20:31:11 ===> input_W=240
+2024-12-07 20:31:11 ===> input_D=160
+2024-12-07 20:31:11 ===> crop_H=128
+2024-12-07 20:31:11 ===> crop_W=128
+2024-12-07 20:31:11 ===> crop_D=128
+2024-12-07 20:31:11 ===> output_D=155
+2024-12-07 20:31:11 ===> batch_size=2
+2024-12-07 20:31:11 ===> OOD_Condition=blur
+2024-12-07 20:31:11 ===> OOD_Level=2
+2024-12-07 20:31:11 ===> snapshot=True
+2024-12-07 20:31:11 ===> Uncertainty_Loss=True
+2024-12-07 20:31:11 ===> input_modality=four
+2024-12-07 20:31:11 ===> model_name=U
+2024-12-07 20:31:11 ===> test_epoch=177
+2024-12-07 20:31:11 ===> device=cpu
+2024-12-07 20:31:11 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:31:11 ===> aug_smooth=False
+2024-12-07 20:31:11 ===> eigen_smooth=False
+2024-12-07 20:31:11 ===> method=gradcam
+2024-12-07 20:31:11 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:31:11 ===> num_classes=2
+2024-12-07 20:31:11 ===> out_size=(584, 565)
+2024-12-07 20:31:11 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:31:11 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:11 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:12 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:12 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:12 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:12 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:12 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:12 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:12 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:31:12 ===> Single sample test time consumption 0.08 seconds!
+2024-12-07 20:31:13 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:31:13 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:31:13 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:31:13 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:31:13 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:31:13 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:31:13 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:31:13 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000
+2024-12-07 20:31:13 ===> ===========>Test begining!===========
+2024-12-07 20:31:13 ===> --------------------------------------This is all argsurations----------------------------------
+2024-12-07 20:31:13 ===> user=name of user
+2024-12-07 20:31:13 ===> experiment=UMIS
+2024-12-07 20:31:13 ===> date=2024-12-07
+2024-12-07 20:31:13 ===> description=Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:13 ===> start_epoch=177
+2024-12-07 20:31:13 ===> end_epochs=500
+2024-12-07 20:31:13 ===> submission=./results
+2024-12-07 20:31:13 ===> lambda_epochs=50
+2024-12-07 20:31:13 ===> save_freq=5
+2024-12-07 20:31:13 ===> lr=0.002
+2024-12-07 20:31:13 ===> savepath=./results/plot/output
+2024-12-07 20:31:13 ===> save_dir=./results
+2024-12-07 20:31:13 ===> mode=test
+2024-12-07 20:31:13 ===> dataset=DRIVE
+2024-12-07 20:31:13 ===> folder=folder0
+2024-12-07 20:31:13 ===> input_H=240
+2024-12-07 20:31:13 ===> input_W=240
+2024-12-07 20:31:13 ===> input_D=160
+2024-12-07 20:31:13 ===> crop_H=128
+2024-12-07 20:31:13 ===> crop_W=128
+2024-12-07 20:31:13 ===> crop_D=128
+2024-12-07 20:31:13 ===> output_D=155
+2024-12-07 20:31:13 ===> batch_size=2
+2024-12-07 20:31:13 ===> OOD_Condition=blur
+2024-12-07 20:31:13 ===> OOD_Level=3
+2024-12-07 20:31:13 ===> snapshot=True
+2024-12-07 20:31:13 ===> Uncertainty_Loss=True
+2024-12-07 20:31:13 ===> input_modality=four
+2024-12-07 20:31:13 ===> model_name=U
+2024-12-07 20:31:13 ===> test_epoch=177
+2024-12-07 20:31:13 ===> device=cpu
+2024-12-07 20:31:13 ===> image_path=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/data/DRIVE/images/01_test.tif
+2024-12-07 20:31:13 ===> aug_smooth=False
+2024-12-07 20:31:13 ===> eigen_smooth=False
+2024-12-07 20:31:13 ===> method=gradcam
+2024-12-07 20:31:13 ===> output_dir=/home/pxl/myProject/血管分割/molong-深度插值/molong-work/DEviS-main/results2/
+2024-12-07 20:31:13 ===> num_classes=2
+2024-12-07 20:31:13 ===> out_size=(584, 565)
+2024-12-07 20:31:13 ===> ----------------------------------------This is a halving line----------------------------------
+2024-12-07 20:31:13 ===> Trustworthy medical image segmentation by coco,training on train.txt!
+2024-12-07 20:31:13 ===> Single sample test time consumption 0.06 seconds!
+2024-12-07 20:31:13 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:13 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:13 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:14 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:14 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:14 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:14 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:14 ===> Single sample test time consumption 0.05 seconds!
+2024-12-07 20:31:14 ===> aver_dice=0.000000,aver_noise_dice = 0.000000
+2024-12-07 20:31:14 ===> aver_iou=0.000000,aver_noise_iou = 0.000000
+2024-12-07 20:31:14 ===> aver_hd=0.000000,aver_noise_hd = 0.000000
+2024-12-07 20:31:14 ===> aver_assd=0.000000,aver_noise_assd = 0.000000
+2024-12-07 20:31:14 ===> aver_certainty=0.000000,aver_noise_certainty = 0.000000
+2024-12-07 20:31:14 ===> aver_mne=0.000000,aver_noise_mne = 0.000000
+2024-12-07 20:31:14 ===> aver_ece=0.000000,aver_noise_ece = 0.000000
+2024-12-07 20:31:14 ===> aver_ueo=0.000000,aver_noise_ueo = 0.000000

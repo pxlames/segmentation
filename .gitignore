@@ -17,3 +17,5 @@ env/
 data/
 inference-output/
 train-log/
+
+lib/UncertainSample/DEviS-main/results/
