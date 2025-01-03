@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import numpy as np
-from no_one提取图结构 import segment_and_visualize_vessels
+from .no_one提取图结构 import segment_and_visualize_vessels
 """ 作为loss加权 """
 import torch
 import torch.nn as nn

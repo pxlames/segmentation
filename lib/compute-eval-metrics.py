@@ -6,7 +6,7 @@ import numpy as np
 import os, glob
 from PIL import Image
 
-srcdir = "/home/pxl/myProject/血管分割/molong-深度插值/molong-work/segmentation/inference-output/topo-DRIVE-skeletonloss"
+srcdir = "/home/xkw/pxlames/segmentation/outputs/testResults/FIVE-BceDiceSmooth_V3_0.5_0.2_0.0001_4"
 logfile = os.path.join(srcdir,"metrics.csv") # will log to this file
 
 def main():

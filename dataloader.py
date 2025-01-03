@@ -13,7 +13,9 @@ from torch.utils import data
 from skimage import io
 import pdb
 import SimpleITK as sitk
-from LIOT import distance_weight_binary_pattern_faster
+from torchvision.utils import save_image
+
+# from lib.LION import distance_weight_binary_pattern_faster
 
 class DRIVE(data.Dataset):
     def __init__(self, listpath, folderpaths, task, crop_size = 128):
@@ -54,24 +56,44 @@ class DRIVE(data.Dataset):
             gt = Image.open(gt_path)
 
             # 转换为numpy数组进行LION处理
-            img_np = np.array(img)  # [H, W, 3]
+            # img_np = np.array(img)  # [H, W, 3]
             
             # 计算LION特征
-            lion_features = distance_weight_binary_pattern_faster(img_np)  # [H, W, 4]
+            # lion_features = distance_weight_binary_pattern_faster(img_np)  # [H, W, 4]
             
             # 将原始图像和LION特征拼接
-            img_combined = np.concatenate([img_np, lion_features], axis=2)  # [H, W, 7]
+            # img_combined = np.concatenate([img_np, lion_features], axis=2)  # [H, W, 7]
             
             # 转换为tensor
-            img_combined = torch.from_numpy(img_combined).permute(2, 0, 1).float() / 255.0  # [7, H, W]
+            # img_combined = torch.from_numpy(img_combined).permute(2, 0, 1).float() / 255.0  # [7, H, W]
             gt = self.to_tensor(gt)
+            img = self.to_tensor(img) 
             
-            img = img_combined
+            savePath = '/home/xkw/pxlames/segmentation/data/DRIVE/train未归一化结果'
+            # 确保保存路径存在
+            os.makedirs(savePath, exist_ok=True)
+            # 将归一化后的图像保存为png文件
+            save_filename = os.path.join(savePath, filename + '_normalized.png')
+            # 将tensor转换为PIL图像并保存
+            save_image(img,save_filename)
+            # cpu store
+            self.dataCPU['image'].append(img)
+            self.dataCPU['label'].append(gt)
+            self.dataCPU['filename'].append(filename)
+            
             # normalize within a channel
             for j in range(img.shape[0]):
                 meanval = img[j].mean()
                 stdval = img[j].std()
                 img[j] = (img[j] - meanval) / stdval
+            
+            savePath = '/home/xkw/pxlames/segmentation/data/DRIVE/train归一化结果'
+            # 确保保存路径存在
+            os.makedirs(savePath, exist_ok=True)
+            # 将归一化后的图像保存为png文件
+            save_filename = os.path.join(savePath, filename + '_normalized.png')
+            # 将tensor转换为PIL图像并保存
+            save_image(img,save_filename)
             # cpu store
             self.dataCPU['image'].append(img)
             self.dataCPU['label'].append(gt)
@@ -99,7 +121,7 @@ class DRIVE(data.Dataset):
     
        
 class FIVE(data.Dataset):
-    def __init__(self, folderpaths, task, crop_size = 128):
+    def __init__(self, listpath,  folderpaths, task, crop_size=128):
 
         self.imgfolder = folderpaths[0]
         self.gtfolder = folderpaths[1]
@@ -129,24 +151,11 @@ class FIVE(data.Dataset):
             
             # 读取图像
             img = Image.open(im_path)
-            gt = Image.open(gt_path)
+            gt = Image.open(gt_path)         
             
-            # 转换为numpy数组进行LION处理
-            img = np.array(img)  # [H, W, 3]
-            
-            # 计算LION特征
-            lion_features = distance_weight_binary_pattern_faster(img)  # [H, W, 4]
-            
-            # 将原始图像和LION特征拼接
-            img_combined = np.concatenate([img, lion_features], axis=2)  # [H, W, 7]
-            
-            # 转换为tensor
-            img_combined = torch.from_numpy(img_combined).permute(2, 0, 1).float() / 255.0  # [7, H, W]
             gt = self.to_tensor(gt)
-            
-            print('test:========')
-            print(gt)
-            # normalize within a channel
+            img = self.to_tensor(img) 
+        # normalize within a channel
             for j in range(img.shape[0]):
                 meanval = img[j].mean()
                 stdval = img[j].std()
