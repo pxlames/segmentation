@@ -1,6 +1,6 @@
 import torch.nn as nn
 import torch
-from core.modules import (
+from modules import (
     ResidualConv,
     ASPP,
     AttentionBlock,

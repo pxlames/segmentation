@@ -1,10 +1,10 @@
 import torch
 import torch.nn as nn
-from core.modules import ResidualConv, Upsample
+from .modules import ResidualConv, Upsample
 
 
 class ResUnet(nn.Module):
-    def __init__(self, channel, filters=[64, 128, 256, 512]):
+    def __init__(self, channel, filters=[32, 64, 128, 256]):
         super(ResUnet, self).__init__()
 
         self.input_layer = nn.Sequential(

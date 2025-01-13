@@ -29,6 +29,7 @@ from time import time
 
 from dataloader import DRIVE, FIVE
 from lib.model.unet.unet_model import UNet
+from lib.model.ResUnet.res_unet import ResUnet
 # from lib.unet.iternet_model import UNet_concate
 
 from calculate_loss import LossCalculator
@@ -132,7 +133,12 @@ def train_2d(mydict):
         validation_generator = torch.utils.data.DataLoader(validation_set, batch_size=mydict['val_batch_size'],
                                                          shuffle=False, num_workers=0, drop_last=False)
     # Network
-    network = UNet(n_channels=1, n_classes=mydict['num_classes'], start_filters=64).to(device)
+    model = 'res_unet'
+    if(model == 'unet'):
+        network = UNet(n_channels=1, n_classes=mydict['num_classes'], start_filters=64).to(device)
+    else:
+        network = ResUnet(channel=1).to(device)
+    
     # network = UNet_concate(n_channels=7, n_classes=mydict['num_classes'])
     # 从配置文件中获取损失函数配置
     lossCalculator = LossCalculator(mydict['loss'])

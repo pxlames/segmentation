@@ -139,7 +139,7 @@ class FIVE(data.Dataset):
         self.task = task
  
         self.to_tensor = transforms.ToTensor() # converts HWC in [0,255] to CHW in [0,1]
-        self.is_lvs=True
+        self.is_lvs=False
         self.loadCPU()
 
     def augment(self,img,gt):

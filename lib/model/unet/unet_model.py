@@ -33,3 +33,20 @@ class UNet(nn.Module):
         x = self.up4(x, x1)
         logits = self.outc(x)
         return logits
+
+def test_unet():
+    img = torch.ones(1, 3, 224, 224)
+    unet = UNet(n_channels=3, n_classes=1, start_filters=64)
+    
+    # 计算模型参数总量
+    total_params = sum(p.numel() for p in unet.parameters())
+    print(f'模型总参数量: {total_params:,}')
+    
+    # 计算模型大小(MB)
+    model_size = total_params * 4 / (1024 * 1024) # 假设每个参数占4字节
+    print(f'模型大小: {model_size:.2f} MB')
+    
+    assert unet(img).shape == torch.Size([1, 1, 224, 224])
+    
+
+# test_unet()

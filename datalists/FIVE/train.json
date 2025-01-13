@@ -15,7 +15,7 @@
             "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
             "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
             "crop_size":73,
-            "train_batch_size":32,                      
+            "train_batch_size":4,                      
             "val_batch_size":2,
             "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
             "learning_rate":0.0001,

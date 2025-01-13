@@ -1,7 +1,7 @@
 
 # 训练
 CUDA_VISIBLE_DEVICES=1 python /home/xkw/pxlames/segmentation/main.py --params /home/xkw/pxlames/segmentation/datalists/DRIVE/train.json
-CUDA_VISIBLE_DEVICES=0 python /home/xkw/pxlames/segmentation/main.py --params /home/xkw/pxlames/segmentation/datalists/FIVE/train.json --saveFlag FIVE-BceDice_0.0001_32 --configName FIVE-BceDice
+CUDA_VISIBLE_DEVICES=0 python /home/xkw/pxlames/segmentation/main.py --params /home/xkw/pxlames/segmentation/datalists/FIVE/train.json --saveFlag FIVE-BceDice_ResUnet_test --configName FIVE-BceDice
 CUDA_VISIBLE_DEVICES=2 python /home/xkw/pxlames/segmentation/main.py --params /home/xkw/pxlames/segmentation/datalists/FIVE/train.json --saveFlag FIVE-BceDicePD_0.0001_4 --configName FIVE-BceDicePD
 CUDA_VISIBLE_DEVICES=3 python /home/xkw/pxlames/segmentation/main.py --params /home/xkw/pxlames/segmentation/datalists/FIVE/train.json --saveFlag FIVE-BceDiceSkeleton_0.0001_4 --configName FIVE-BceDiceSkeleton
 CUDA_VISIBLE_DEVICES=2 python /home/xkw/pxlames/segmentation/main.py --params /home/xkw/pxlames/segmentation/datalists/FIVE/train.json --saveFlag FIVE-BceDiceSmooth_V3_0.5_0.2_0.0001_4 --configName FIVE-BceDiceSmooth
