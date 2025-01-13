@@ -1,3 +1,4 @@
+from time import time
 import numpy as np
 import torch
 import torch.nn as nn
@@ -60,7 +61,7 @@ class LossCalculator:
         self.cfg = cfg
         self.loss_types = cfg.get('loss_types', ['ce'])  # 损失函数名称数组
         self.loss_weights = cfg.get('loss_weights', None) # 损失函数权重数组
-        
+        print(self.loss_weights)
         # 如果没有指定权重,则默认每个损失权重为1
         if self.loss_weights is None:
             self.loss_weights = [1.0] * len(self.loss_types)
@@ -78,7 +79,7 @@ class LossCalculator:
         self.loss_history = {loss_type: [] for loss_type in self.loss_types}
         self.loss_history['total'] = []
 
-    def compute_loss(self, pred, target, epoch=0):
+    def compute_loss(self, pred, target, patch_lvs, epoch=0):
         """计算损失值
         
         Args:
@@ -117,8 +118,14 @@ class LossCalculator:
                 loss = self.topo_loss_func(pred, target)
                 
             elif loss_type == 'smooth':
+                # start_time = time()
                 loss = self.smoothness_loss(pred, target, epoch)
+                # end_time = time()
+                # print(f'Smoothness loss计算时间: {end_time - start_time:.4f}秒')
                     
+            elif loss_type == 'ls_recall':
+                loss = self.ls_recall_loss(patch_lvs, target, pred, threshold=0.2)
+                
             else:
                 raise ValueError(f'不支持的损失函数类型: {loss_type}')
             
@@ -209,6 +216,7 @@ class LossCalculator:
 
         return smooth_loss
 
+
     def smoothness_loss(self, pred, mask, epoch=0, lambda_smooth=1.0, eps=1e-6, search_distance=5):
         """
         计算血管区域内部的平滑约束项，基于 8 方向统计确定血管方向。
@@ -226,14 +234,7 @@ class LossCalculator:
             smooth_loss (torch.Tensor): 血管区域内部的平滑约束项的值。
         """
         assert mask.shape == pred.shape, "掩码和预测的形状必须相同"
-        
-        # 计算当前 epoch 的阈值（线性衰减）
-        # initial_threshold = 0.5  # 初始阈值
-        # min_threshold = 0.2      # 最小阈值
-        # decay_epochs = 1200      # 总 epoch 数
-        # decay_rate = epoch / decay_epochs  # 衰减率
-        # threshold = initial_threshold - (initial_threshold - min_threshold) * decay_rate  # 线性衰减从 0.5 到 0.2
-        
+
         # 定义 8 个方向的偏移量
         directions = [
             (0, 1),   # 0°
@@ -246,60 +247,69 @@ class LossCalculator:
             (-1, 1)   # 315°
         ]
 
-        # 初始化平滑损失
+        # 初始化平滑损失和有效像素数量
         smooth_loss = torch.tensor(0.0, device=pred.device)
+        num_valid_pixels = torch.tensor(0.0, device=pred.device)
 
-        # 遍历每个像素点
-        for i in range(pred.shape[2]):  # 遍历所有行
-            for j in range(pred.shape[3]):  # 遍历所有列
-                if mask[0, 0, i, j] == 0:  # 只处理血管区域
-                    continue
+        # 提取血管区域的掩码
+        vascular_mask = mask[0, 0]  # 形状为 (height, width)
 
-                # 初始化方向统计
-                direction_counts = np.zeros(8, dtype=int)
+        # 遍历每个方向
+        for dx, dy in directions:
+            # 计算当前方向的偏移量
+            shift_x = torch.arange(pred.shape[2], device=pred.device).reshape(-1, 1) + dx
+            shift_y = torch.arange(pred.shape[3], device=pred.device).reshape(1, -1) + dy
 
-                # 统计 8 个方向的血管像素个数
-                for k, (dx, dy) in enumerate(directions):
-                    for d in range(1, search_distance + 1):
-                        # 计算当前方向的像素坐标
-                        x = i + d * dx
-                        y = j + d * dy
+            # 检查是否超出边界
+            valid_x = (shift_x >= 0) & (shift_x < pred.shape[2])
+            valid_y = (shift_y >= 0) & (shift_y < pred.shape[3])
+            valid_mask = valid_x & valid_y
 
-                        # 检查是否超出 mask 范围
-                        if x < 0 or x >= pred.shape[2] or y < 0 or y >= pred.shape[3]:
-                            break  # 超出范围，停止该方向的后续统计
+            # 计算当前方向的梯度
+            shifted_pred = pred[0, 0, shift_x.clamp(0, pred.shape[2] - 1), shift_y.clamp(0, pred.shape[3] - 1)]
+            grad = torch.abs(pred[0, 0] - shifted_pred)
 
-                        # 如果当前像素是 mask 外（值为 0），停止该方向的后续统计
-                        if mask[0, 0, x, y] == 0:
-                            break
+            # 只统计血管区域的梯度
+            grad = grad * vascular_mask * valid_mask
 
-                        # 统计血管像素个数
-                        direction_counts[k] += 1
-
-                # 找到血管像素个数最多的方向
-                best_direction_index = np.argmax(direction_counts)
-                dx, dy = directions[best_direction_index]
-
-                # 方向性梯度计算：只计算该方向上两个像素的差值
-                # 检查是否超出 pred 范围
-                x = i + dx
-                y = j + dy
-                if 0 <= x < pred.shape[2] and 0 <= y < pred.shape[3]:
-                    grad = torch.abs(pred[0, 0, i, j] - pred[0, 0, x, y])
-                else:
-                    grad = torch.tensor(0.0, device=pred.device)  # 超出范围时梯度为 0
-
-                # 动态阈值筛选：如果梯度差值大于阈值，则计入平滑损失
-                if grad > 0.2:
-                    smooth_loss += grad
-
-        # 计算有效像素数量
-        num_valid_pixels = torch.sum(mask) + eps
+            # 动态阈值筛选：如果梯度差值大于阈值，则计入平滑损失
+            threshold_mask = (grad > 0.2).float()
+            smooth_loss += (threshold_mask * grad).sum()  # 累加满足条件的梯度值
+            num_valid_pixels += threshold_mask.sum()      # 累加满足条件的像素数量
 
         # 计算平滑约束项
-        smooth_loss = lambda_smooth * smooth_loss / num_valid_pixels
+        smooth_loss = lambda_smooth * smooth_loss / (num_valid_pixels + eps)
 
         return smooth_loss
+    
+    def ls_recall_loss(self, img_lvs, img_bin, pred, threshold, temperature=0.1, epsilon=1e-6):
+        """
+        计算可微的 LSRecall Loss。
+
+        参数:
+            img_lvs: 包含 LVS 值的图像 (Tensor).
+            img_bin: 包含血管标注的二值图像 (Tensor).
+            pred: 模型预测的概率值 (Tensor).
+            threshold: 显著性阈值.
+            temperature: 控制概率平滑程度的超参数.
+            epsilon: 平滑项，避免除零错误.
+
+        返回:
+            LSRecall Loss (Tensor).
+        """
+        # 将 LVS 转换为低显著性概率
+        img_hard = (img_lvs <= threshold) & (img_bin > 0)
+        if img_hard.sum() == 0:
+            # No vessel pixels
+            return 0
+
+        # Recovered low-salience pixels
+        pred_hard = pred[img_hard>0]
+
+        # Recall
+        recall = pred_hard.sum()/pred_hard.size
+
+        return 1 - recall.item()
 
 
 # if __name__ == '__main__':
@@ -342,5 +352,5 @@ class LossCalculator:
 
 
 
-#     loss_smooth = loss_calculator.smoothness_loss(pred_noisy2, mask_noisy,1200)
+#     loss_smooth = loss_calculator.smoothness_loss(pred_noisy, mask_noisy,1200)
 #     print(f"完全平滑情况下的平滑损失值: {loss_smooth.item()} (预期: 0.0)")

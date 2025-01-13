@@ -29,7 +29,7 @@ import os, glob, sys
 from time import time
 
 from dataloader import DRIVE, FIVE
-from lib.unet.unet_model import UNet
+from lib.model.unet.unet_model import UNet
 # from lib.unet.iternet_model import UNet_concate
 
 
@@ -126,7 +126,7 @@ def test_2d(mydict):
     # test_subset = torch.utils.data.Subset(test_set, range(30))
     test_generator = torch.utils.data.DataLoader(test_set, batch_size=1, shuffle=False, num_workers=2, drop_last=False)
 
-    network = UNet(n_channels=3, n_classes=mydict['num_classes'], start_filters=64).to(device)
+    network = UNet(n_channels=1, n_classes=mydict['num_classes'], start_filters=64).to(device)
 
     if mydict['checkpoint_restore'] != "":
         network.load_state_dict(torch.load(mydict['checkpoint_restore']), strict=True)
@@ -201,7 +201,7 @@ def test_2d_cal(mydict):
     # test_subset = torch.utils.data.Subset(test_set, range(30))
     test_generator = torch.utils.data.DataLoader(test_set, batch_size=1, shuffle=False, num_workers=2, drop_last=False)
 
-    network = UNet(n_channels=3, n_classes=mydict['num_classes'], start_filters=64).to(device)
+    network = UNet(n_channels=1, n_classes=mydict['num_classes'], start_filters=64).to(device)
 
     if mydict['checkpoint_restore'] != "":
         network.load_state_dict(torch.load(mydict['checkpoint_restore']), strict=True)

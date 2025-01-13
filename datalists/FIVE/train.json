@@ -106,7 +106,35 @@
     "FIVE-BceDiceSmooth":{
         "common":{
             "loss_config": {
-                "loss_types": ["bce", "dice","smooth"]
+                "loss_types": ["bce", "dice","smooth"],
+                "loss_weights": [1,1,1]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"FIVE"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":73,
+            "train_batch_size":4,                      
+            "val_batch_size":2,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.0001,
+            "num_epochs":1200,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "FIVE-BceDiceLsRecall":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice","ls_recall"],
+                "loss_weights": [1,1,1]
             },
             "task": "train",
             "num_classes":1,

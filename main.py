@@ -28,7 +28,7 @@ import os, glob, sys
 from time import time
 
 from dataloader import DRIVE, FIVE
-from lib.unet.unet_model import UNet
+from lib.model.unet.unet_model import UNet
 # from lib.unet.iternet_model import UNet_concate
 
 from calculate_loss import LossCalculator
@@ -127,12 +127,12 @@ def train_2d(mydict):
         validation_set = FIVE("",
                             ["/home/xkw/pxlames/segmentation/data/FIVE/val/images",
                             "/home/xkw/pxlames/segmentation/data/FIVE/val/1st_manual"],
-                            task="train",
+                            task="val",
                             crop_size=128)
         validation_generator = torch.utils.data.DataLoader(validation_set, batch_size=mydict['val_batch_size'],
                                                          shuffle=False, num_workers=0, drop_last=False)
     # Network
-    network = UNet(n_channels=3, n_classes=mydict['num_classes'], start_filters=64).to(device)
+    network = UNet(n_channels=1, n_classes=mydict['num_classes'], start_filters=64).to(device)
     # network = UNet_concate(n_channels=7, n_classes=mydict['num_classes'])
     # 从配置文件中获取损失函数配置
     lossCalculator = LossCalculator(mydict['loss'])
@@ -164,7 +164,7 @@ def train_2d(mydict):
         avg_train_loss = 0.0
         epoch_start_time = time()
 
-        for step, (patch, mask, _) in enumerate(training_generator): 
+        for step, (patch, mask, patch_lvs, _) in enumerate(training_generator): 
             # 每几个批次清理一次内存
             if step % 10 == 0:
                 torch.cuda.empty_cache()
@@ -172,10 +172,11 @@ def train_2d(mydict):
 
             patch = patch.to(device, dtype=torch.float)
             mask = mask.to(device, dtype=torch.float)
+            patch_lvs = patch_lvs.to(device, dtype=torch.float)
             #mask = mask.type(torch.LongTensor).to(device)
             y_pred = torch.sigmoid(network(patch))  # sigmoid needed for BCE (else throws error if not in 0,1 range)
 
-            loss_val = lossCalculator.compute_loss(y_pred, mask,epoch)
+            loss_val = lossCalculator.compute_loss(y_pred, mask, patch_lvs, epoch)
             # 使用总损失进行反向传播
             loss_val = loss_val['total']
                 ##########
@@ -193,7 +194,9 @@ def train_2d(mydict):
             optimizer.step()
                 # 每个epoch结束后绘制损失曲线
         if (epoch + 1) % 10 == 0:
-            lossCalculator.plot_loss_history(save_dir=mydict['output_folder'])
+            save_dir = mydict['output_folder']
+            lossCalculator.plot_loss_history(save_dir=save_dir)
+            print(f"损失曲线已保存至: {save_dir}")
             
             
         avg_train_loss /= num_batches

@@ -1,0 +1,61 @@
+image  img_115_A.png
+fractal dimension of pred_115_A: 1.642192821533159
+image  img_117_A.png
+fractal dimension of pred_117_A: 1.5914288747988852
+image  img_134_A.png
+fractal dimension of pred_134_A: 1.607461368040709
+image  img_167_D.png
+fractal dimension of pred_167_D: 1.5451150526952795
+image  img_178_D.png
+fractal dimension of pred_178_D: 1.6080739718524821
+image  img_202_D.png
+fractal dimension of pred_202_D: 1.5531615574464996
+image  img_223_D.png
+fractal dimension of pred_223_D: 1.5086363413520854
+image  img_253_D.png
+fractal dimension of pred_253_D: 1.4875532775774556
+image  img_265_D.png
+fractal dimension of pred_265_D: 1.6263538686531878
+image  img_27_A.png
+fractal dimension of pred_27_A: 1.5379737114952265
+image  img_292_D.png
+fractal dimension of pred_292_D: 1.6456297931647168
+image  img_307_G.png
+fractal dimension of pred_307_G: 1.5468800603287685
+image  img_356_G.png
+fractal dimension of pred_356_G: 1.6328527585571648
+image  img_383_G.png
+fractal dimension of pred_383_G: 1.6361592696799434
+image  img_388_G.png
+fractal dimension of pred_388_G: 1.529749322007996
+image  img_420_G.png
+fractal dimension of pred_420_G: 1.6142962011487636
+image  img_421_G.png
+fractal dimension of pred_421_G: 1.644871788864279
+image  img_439_G.png
+fractal dimension of pred_439_G: 1.56770032030144
+image  img_457_N.png
+fractal dimension of pred_457_N: 1.651467882867882
+image  img_479_N.png
+fractal dimension of pred_479_N: 1.618976083570879
+image  img_511_N.png
+fractal dimension of pred_511_N: 1.6348056713008041
+image  img_522_N.png
+fractal dimension of pred_522_N: 1.6330539218780589
+image  img_548_N.png
+fractal dimension of pred_548_N: 1.639898120124091
+image  img_573_N.png
+fractal dimension of pred_573_N: 1.6577027137203282
+image  img_76_A.png
+fractal dimension of pred_76_A: 1.5487480634307544
+image  img_78_A.png
+fractal dimension of pred_78_A: 1.5979166239477574
+image  img_82_A.png
+fractal dimension of pred_82_A: 1.5087061850604768
+image  img_88_A.png
+fractal dimension of pred_88_A: 1.5909260572131398
+image  img_92_A.png
+fractal dimension of pred_92_A: 1.609712182921991
+image  img_98_A.png
+fractal dimension of pred_98_A: 1.5726791434826173
+[1.642192821533159, 1.5914288747988852, 1.607461368040709, 1.5451150526952795, 1.6080739718524821, 1.5531615574464996, 1.5086363413520854, 1.4875532775774556, 1.6263538686531878, 1.5379737114952265, 1.6456297931647168, 1.5468800603287685, 1.6328527585571648, 1.6361592696799434, 1.529749322007996, 1.6142962011487636, 1.644871788864279, 1.56770032030144, 1.651467882867882, 1.618976083570879, 1.6348056713008041, 1.6330539218780589, 1.639898120124091, 1.6577027137203282, 1.5487480634307544, 1.5979166239477574, 1.5087061850604768, 1.5909260572131398, 1.609712182921991, 1.5726791434826173]

@@ -1,3 +1,4 @@
+import datetime
 import numpy as np
 import os
 import cc3d
@@ -5,8 +6,10 @@ from skimage.morphology import skeletonize, skeletonize_3d
 import numpy as np
 import os, glob
 from PIL import Image
+import cv2
+from vessel_salience import salience
 
-srcdir = "/home/xkw/pxlames/segmentation/outputs/testResults/FIVE-BceDiceSmooth_V3_0.5_0.2_0.0001_4"
+srcdir = "/home/xkw/pxlames/segmentation/outputs/testResults/FIVE-BceDiceLsRecall_V1_0.0001_4_1"
 logfile = os.path.join(srcdir,"metrics.csv") # will log to this file
 
 def main():
@@ -16,11 +19,12 @@ def main():
 
     print("Saving results to {}".format(logfile))
 
-    metrics = {'accuracy':[], 'dice':[], 'cldice':[], '0betti':[]}
+    metrics = {'accuracy':[], 'dice':[], 'cldice':[], '0betti':[], 'recall':[], 'ls_recall':[]}
     with open(logfile, 'a') as wfile:
         for i, fpath in enumerate(filepaths):
             writestr = fpath.split('/')[-1]
             gtpath = fpath.replace("pred","gt")
+            imgpath = fpath.replace("pred","img")
 
             pred = interpolate(np.array(Image.open(fpath)))
             pred = np.squeeze(pred)
@@ -28,17 +32,26 @@ def main():
             gt = interpolate(np.array(Image.open(gtpath)))
             gt = np.squeeze(gt[:,:,0])
 
+            img_gray = np.array(Image.open(imgpath), dtype=np.uint8)
+            if len(img_gray.shape) > 2:
+                img_gray = cv2.cvtColor(img_gray, cv2.COLOR_BGR2GRAY)
+
             cldice_acc = clDice(pred, gt)
             betti_acc = get_betti_error(pred, gt)
             dice_acc = dice_score(pred, gt)
             acc = accuracy_score(pred, gt)
+            recall = recall_score(pred, gt)
+            ls_recall = ls_recall_score(img_gray, gt, pred)
 
             metrics['accuracy'].append(acc)
             metrics['dice'].append(dice_acc)
             metrics['cldice'].append(cldice_acc)
             metrics['0betti'].append(betti_acc)
+            metrics['recall'].append(recall)
+            metrics['ls_recall'].append(ls_recall)
 
-            writestr += "; Acc {}; Dice {}; clDice {}; 0-dim Betti {}\n".format(acc, dice_acc, cldice_acc, betti_acc)
+            writestr += "; Acc {}; Dice {}; clDice {}; 0-dim Betti {}; Recall {}; LSRecall {}\n".format(
+                acc, dice_acc, cldice_acc, betti_acc, recall, ls_recall)
 
             wfile.write(writestr)
         wfile.write("\nAverage:\n")
@@ -133,6 +146,76 @@ def accuracy_score(image1, image2):
     accuracy = correct / total
     return accuracy
 
+def recall_score(pred, gt):
+    """计算召回率
+    
+    Args:
+        pred: 预测图像
+        gt: 真实标签图像
+        
+    Returns:
+        float: 召回率分数
+    """
+    # 将图像展平为一维数组
+    pred_flat = pred.flatten()
+    gt_flat = gt.flatten()
+    
+    # 计算真阳性(TP)和假阴性(FN)
+    true_positives = np.sum(pred_flat * gt_flat)
+    false_negatives = np.sum((1 - pred_flat) * gt_flat)
+    
+    # 计算召回率
+    recall = true_positives / (true_positives + false_negatives)
+    
+    return recall
+
+def ls_recall_score(img_gray, gt, pred, threshold=0.01, radius=8):
+    """计算LSRecall分数
+    
+    Args:
+        img_gray: 原始灰度图像
+        gt: 真实标签图像
+        pred: 预测图像
+        threshold: 显著性阈值
+        radius: 轮廓点周围包含背景值的半径
+        
+    Returns:
+        float: LSRecall分数
+    # """
+    gt = gt.astype(np.uint8)
+
+    img_lvs, img_skel, img_lvs_skel = salience.lvs(
+        img_gray,
+        gt,
+        radius=radius,
+        return_skel=True
+    )
+    
+    # 计算LSRecall
+    ls_recall = salience.ls_recall(
+        img_lvs,
+        gt,
+        pred,
+        threshold=threshold
+    )
+    
+    # 将img_gray和img_lvs_skel合并到一张图片
+    combined_img = np.zeros((img_gray.shape[0], img_gray.shape[1], 3), dtype=np.uint8)
+    combined_img[:,:,0] = img_gray  # 灰度图放在红色通道
+    combined_img[:,:,1] = ((img_lvs<threshold) & (gt>0)) * 255  # 骨架图放在绿色通道
+    
+    # 保存合并后的图片
+    cv2.imwrite('combined_ls_recall.png', combined_img)
+    
+    # 保存单独的img_lvs_skel图片
+    cv2.imwrite('img_gray.png', img_gray)
+    
+    gt = gt * 255
+    cv2.imwrite('gt.png', gt)
+    pred = (pred * 255).astype(np.uint8)[:,:,np.newaxis]
+    cv2.imwrite('pred.png', pred)
+    
+    return ls_recall
 
 if __name__ == "__main__":
     main()
