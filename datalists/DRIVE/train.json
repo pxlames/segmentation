@@ -1,24 +1,249 @@
 {
-    "common":{
-        "task": "train",
-        "num_classes":1,
-        "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
-        "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
-        "checkpoint_restore":"",
-        "dataset":"DRIVE"
-        },
-    "train":{
-        "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
-        "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
-        "crop_size":73,
-        "train_batch_size":8, 
-        "val_batch_size":2,
-        "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
-        "output_folder_flag":"FIVE-1",
-        "learning_rate":0.0001,
-        "num_epochs":1200,
-        "save_every": 10,
-        "topo_weight":0.0001,
-        "topo_window":73
+    "DRIVE-BceDice-unet":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice"]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"DRIVE",
+            "model":"unet"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":256,
+            "train_batch_size":16,                      
+            "val_batch_size":1,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.001,
+            "num_epochs":2000,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "DRIVE-BceDice-unetplusplus":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice"]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"DRIVE",
+            "model":"unetplusplus"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":256,
+            "train_batch_size":16,                      
+            "val_batch_size":1,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.001,
+            "mode": "adam",
+            "momentum":0.9,
+            "weight_decay":1e-4,
+            "num_epochs":2000,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "DRIVE-BceDice-trans_unet":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice"]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"DRIVE",
+            "model":"trans_unet"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":256,
+            "train_batch_size":16,                      
+            "val_batch_size":1,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.0001,
+            "mode": "adam",
+            "momentum":0.9,
+            "weight_decay":1e-4,
+            "num_epochs":2000,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "FIVE-BceDiceCldice":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice","cldice"]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"FIVE"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":73,
+            "train_batch_size":4,                      
+            "val_batch_size":2,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.0001,
+            "num_epochs":1200,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "FIVE-BceDiceSkeleton":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice","skeletonLoss"]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"FIVE"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":73,
+            "train_batch_size":4,                      
+            "val_batch_size":2,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.0001,
+            "num_epochs":1200,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "FIVE-BceDicePD":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice","PD"]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"FIVE"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":73,
+            "train_batch_size":4,                      
+            "val_batch_size":2,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.0001,
+            "num_epochs":1200,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "FIVE-BceDiceSmooth":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice","smooth"],
+                "loss_weights": [1,1,1]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"FIVE"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":73,
+            "train_batch_size":4,                      
+            "val_batch_size":2,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.0001,
+            "num_epochs":1200,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "FIVE-BceDiceLsRecall":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice","ls_recall"],
+                "loss_weights": [1,1,1]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"FIVE"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":73,
+            "train_batch_size":4,                      
+            "val_batch_size":2,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.0001,
+            "num_epochs":1200,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "DRIVE-softIouLoss":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["soft_iou_loss"],
+                "loss_weights": [1]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"DRIVE",
+            "model":"unet"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":256,
+            "train_batch_size":16,                      
+            "val_batch_size":1,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.001,
+            "num_epochs":2000,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
     }
 }

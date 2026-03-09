@@ -8,16 +8,21 @@ import os, glob
 from PIL import Image
 import cv2
 from vessel_salience import salience
-
-srcdir = "/home/xkw/pxlames/segmentation/outputs/testResults/FIVE-BceDiceLsRecall_V1_0.0001_4_1"
-logfile = os.path.join(srcdir,"metrics.csv") # will log to this file
+import argparse
 
 def main():
+    # 创建命令行参数解析器
+    parser = argparse.ArgumentParser(description='计算分割评估指标')
+    parser.add_argument('--srcdir', type=str, required=True, help='预测结果目录路径')
+    args = parser.parse_args()
+
+    srcdir = args.srcdir
+    logfile = os.path.join(srcdir,"metrics.csv") # 将记录结果写入此文件
 
     filepaths = glob.glob(srcdir + "/pred*png")
     filepaths.sort()
 
-    print("Saving results to {}".format(logfile))
+    print("保存结果到 {}".format(logfile))
 
     metrics = {'accuracy':[], 'dice':[], 'cldice':[], '0betti':[], 'recall':[], 'ls_recall':[]}
     with open(logfile, 'a') as wfile:

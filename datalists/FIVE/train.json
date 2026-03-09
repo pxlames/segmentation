@@ -15,11 +15,38 @@
             "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
             "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
             "crop_size":73,
-            "train_batch_size":4,                      
-            "val_batch_size":2,
+            "train_batch_size":1,                      
+            "val_batch_size":1,
             "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
-            "learning_rate":0.0001,
+            "learning_rate":0.001,
             "num_epochs":1200,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "DRIVE-BceDice":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice"]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"DRIVE",
+            "model":"unetplusplus"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":256,
+            "train_batch_size":16,                      
+            "val_batch_size":1,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.001,
+            "num_epochs":2000,
             "save_every": 10,
             "topo_weight":0.0001,
             "topo_window":73
@@ -156,7 +183,106 @@
             "topo_weight":0.0001,
             "topo_window":73
         }
+    },    
+    "FIVE-BceDice-Unet++":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["bce", "dice","cldice"],
+                "loss_weights": [1,1,1]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/FIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/FIVE/training/1st_manual",
+            "Cfolder": "/home/xkw/pxlames/segmentation/data/FIVE/training/1st_manual",
+            "Ufolder": "/home/xkw/pxlames/segmentation/data/FIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"FIVE",
+            "model":"unetplusplus"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/FIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/FIVE/list-val.csv",
+            "crop_size":73,
+            "train_batch_size":4,                      
+            "val_batch_size":2,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/checkpoints/",
+            "learning_rate":0.001,
+            "mode": "adam",
+            "momentum":0.9,
+            "weight_decay":1e-4,
+            "num_epochs":2000,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+
+    "FIVE—SECOND-BceDice-Unet_Second":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["my"],
+                "loss_weights": [1]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "Cfolder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "Ufolder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"FIVE",
+            "model":"unet_second"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":73,
+            "train_batch_size":4,                      
+            "val_batch_size":2,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/secondStageResults/checkpoints",
+            "learning_rate":0.001,
+            "mode": "adam",
+            "momentum":0.9,
+            "weight_decay":1e-4,
+            "num_epochs":2000,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
+    },
+    "FIVE—SECOND-BceDice":{
+        "common":{
+            "loss_config": {
+                "loss_types": ["cldice"],
+                "loss_weights": [1]
+            },
+            "task": "train",
+            "num_classes":1,
+            "img_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/images",
+            "gt_folder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "Cfolder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "Ufolder": "/home/xkw/pxlames/segmentation/data/DRIVE/training/1st_manual",
+            "checkpoint_restore":"",
+            "dataset":"FIVE",
+            "model":"unet_second"
+            },
+        "train":{
+            "train_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-train.csv",
+            "validation_datalist":"/home/xkw/pxlames/segmentation/datalists/DRIVE/list-val.csv",
+            "crop_size":73,
+            "train_batch_size":4,                      
+            "val_batch_size":2,
+            "output_folder":"/home/xkw/pxlames/segmentation/outputs/secondStageResults/checkpoints",
+            "learning_rate":0.001,
+            "mode": "adam",
+            "momentum":0.9,
+            "weight_decay":1e-4,
+            "num_epochs":2000,
+            "save_every": 10,
+            "topo_weight":0.0001,
+            "topo_window":73
+        }
     }
 }
-
 

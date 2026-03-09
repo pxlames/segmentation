@@ -4,7 +4,7 @@ from .modules import ResidualConv, Upsample
 
 
 class ResUnet(nn.Module):
-    def __init__(self, channel, filters=[32, 64, 128, 256]):
+    def __init__(self, channel, filters=[64, 128, 256, 512]):
         super(ResUnet, self).__init__()
 
         self.input_layer = nn.Sequential(
@@ -43,12 +43,11 @@ class ResUnet(nn.Module):
         x3 = self.residual_conv_2(x2)
         # Bridge
         x4 = self.bridge(x3)
+        
         # Decode
         x4 = self.upsample_1(x4)
         x5 = torch.cat([x4, x3], dim=1)
-
         x6 = self.up_residual_conv1(x5)
-
         x6 = self.upsample_2(x6)
         x7 = torch.cat([x6, x2], dim=1)
 

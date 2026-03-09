@@ -30,8 +30,12 @@ from time import time
 
 from dataloader import DRIVE, FIVE
 from lib.model.unet.unet_model import UNet
-# from lib.unet.iternet_model import UNet_concate
-
+from lib.model.ResUnet.res_unet import ResUnet
+from lib.model.ResUnet.res_unet_plus import ResUnetPlusPlus
+from lib.model.ResUnet.res_unet_plus2 import build_resunetplusplus
+from lib.model.unetplusplus.unetplusplus import ResNet34UnetPlus
+from lib.model.TransUnet.vit_seg_modeling import VisionTransformer as ViT_seg
+from lib.model.TransUnet.vit_seg_modeling import CONFIGS as CONFIGS_ViT_seg
 
 from PIL import Image
 
@@ -52,6 +56,7 @@ def parse_func(args):
     mydict['folders'] = [params['common']['img_folder'], params['common']['gt_folder']]
     mydict["checkpoint_restore"] = params['common']['checkpoint_restore']
     mydict['dataset'] = params['common']['dataset']
+    mydict['model'] = params['common']['model']
 
     if task == "train":
         mydict['train_datalist'] = params['train']['train_datalist']
@@ -126,14 +131,30 @@ def test_2d(mydict):
     # test_subset = torch.utils.data.Subset(test_set, range(30))
     test_generator = torch.utils.data.DataLoader(test_set, batch_size=1, shuffle=False, num_workers=2, drop_last=False)
 
-    network = UNet(n_channels=1, n_classes=mydict['num_classes'], start_filters=64).to(device)
-
+    # Network
+    model = mydict['model']
+    if(model == 'unet'):
+        network = UNet(n_channels=3, n_classes=mydict['num_classes'], start_filters=64).to(device)
+    elif(model == 'res_unet'):
+        network = ResUnet(channel=1).to(device)
+    elif(model == 'res_unet_plus'):
+        network = ResUnetPlusPlus(channel=1).to(device)
+        # network = build_resunetplusplus()
+    elif(model == 'unetplusplus'):
+        network = ResNet34UnetPlus(1,1).to(device)
+    elif(model == 'trans_unet'):
+        config_vit = CONFIGS_ViT_seg['R50-ViT-B_16']
+        config_vit['n_skip'] = 3
+        network = ViT_seg(config_vit, img_size=mydict['crop_size'], num_classes=1).cuda()
+    
+        
     if mydict['checkpoint_restore'] != "":
         network.load_state_dict(torch.load(mydict['checkpoint_restore']), strict=True)
         print("loaded checkpoint! {}".format(mydict['checkpoint_restore']))
     else:
         print("No model found!")
         sys.exit()
+
 
     print("Let the inference begin!")
     print("Todo: {}".format(len(test_generator)))
@@ -142,6 +163,8 @@ def test_2d(mydict):
         # 校准添加,测试阶段全部生成即可. 
         scores = []
         gt_masks = []
+        filenames = []  
+        
         network.eval()
         test_iterator = iter(test_generator)
         for _ in range(len(test_generator)):
@@ -158,6 +181,7 @@ def test_2d(mydict):
             # 加到集合中, 用于校准集的数据
             scores.append(np_pred)  # 将预测结果添加到 scores 列表中
             gt_masks.append(np_gt)  # 将真实标签添加到 gt_masks 列表中
+            filenames.append(filename[0])  # 假设每个batch一个样本，取出文件名
             
             
             #是否保存图像：
@@ -176,7 +200,8 @@ def test_2d(mydict):
         np.save(os.path.join(mydict['output_folder'], 'scores.npy'), scores_array)
         gt_masks_array = np.array(gt_masks)
         np.save(os.path.join(mydict['output_folder'], 'gt_masks.npy'), gt_masks_array)
-
+        filenames_array = np.array(filenames)  # 新增：保存文件名
+        np.save(os.path.join(mydict['output_folder'], 'test_filenames.npy'), filenames_array)
 
 def test_2d_cal(mydict):
     device = torch.device("cuda")
@@ -201,8 +226,23 @@ def test_2d_cal(mydict):
     # test_subset = torch.utils.data.Subset(test_set, range(30))
     test_generator = torch.utils.data.DataLoader(test_set, batch_size=1, shuffle=False, num_workers=2, drop_last=False)
 
-    network = UNet(n_channels=1, n_classes=mydict['num_classes'], start_filters=64).to(device)
-
+    # Network
+    model = mydict['model']
+    if(model == 'unet'):
+        network = UNet(n_channels=3, n_classes=mydict['num_classes'], start_filters=64).to(device)
+    elif(model == 'res_unet'):
+        network = ResUnet(channel=1).to(device)
+    elif(model == 'res_unet_plus'):
+        network = ResUnetPlusPlus(channel=1).to(device)
+        # network = build_resunetplusplus()
+    elif(model == 'unetplusplus'):
+        network = ResNet34UnetPlus(1,1).to(device)
+    elif(model == 'trans_unet'):
+        config_vit = CONFIGS_ViT_seg['R50-ViT-B_16']
+        config_vit['n_skip'] = 3
+        network = ViT_seg(config_vit, img_size=mydict['crop_size'], num_classes=1).cuda()
+    
+    
     if mydict['checkpoint_restore'] != "":
         network.load_state_dict(torch.load(mydict['checkpoint_restore']), strict=True)
         print("loaded checkpoint! {}".format(mydict['checkpoint_restore']))
@@ -217,6 +257,8 @@ def test_2d_cal(mydict):
         # 校准添加,测试阶段全部生成即可. 
         scores = []
         gt_masks = []
+        filenames = []  
+        
         network.eval()
         test_iterator = iter(test_generator)
         for _ in range(len(test_generator)):
@@ -233,12 +275,199 @@ def test_2d_cal(mydict):
             np_pred = torch.squeeze(y_pred).detach().cpu().numpy()
             scores.append(np_pred)  # 将预测结果添加到 scores 列表中
             gt_masks.append(np_gt)  # 将真实标签添加到 gt_masks 列表中
+            filenames.append(filename[0])  # 假设每个batch一个样本，取出文件名
             
         # 将 scores 和 gt_masks 保存到当前文件夹中
         scores_array = np.array(scores)
         np.save(os.path.join(mydict['output_folder'], 'cal_scores.npy'), scores_array)
         gt_masks_array = np.array(gt_masks)
         np.save(os.path.join(mydict['output_folder'], 'cal_gt_masks.npy'), gt_masks_array)
+        filenames_array = np.array(filenames)  # 新增：保存文件名
+        np.save(os.path.join(mydict['output_folder'], 'cal_filenames.npy'), filenames_array)
+        
+def test_2d_train(mydict):
+    device = torch.device("cuda")
+    print("CUDA device: {}".format(device))
+
+    if not torch.cuda.is_available():
+        print("WARNING!!! You are attempting to run training on a CPU (torch.cuda.is_available() is False). This can be VERY slow!")
+
+    # Test Data
+    dataset = mydict['dataset']
+    print("Dataset Name: {}".format(dataset))
+    if dataset == 'DRIVE':
+        test_set = DRIVE(mydict['test_datalist'], mydict['folders'], task="test")
+    elif(dataset == 'FIVE'):
+        test_set = FIVE("",
+                            ["/home/xkw/pxlames/segmentation/data/FIVE/train/images",
+                            "/home/xkw/pxlames/segmentation/data/FIVE/train/1st_manual"],
+                            task="test",
+                            crop_size=128)    
+
+    # 只读取前10个样本
+    # test_subset = torch.utils.data.Subset(test_set, range(30))
+    test_generator = torch.utils.data.DataLoader(test_set, batch_size=1, shuffle=False, num_workers=2, drop_last=False)
+
+    # Network
+    model = mydict['model']
+    if(model == 'unet'):
+        network = UNet(n_channels=3, n_classes=mydict['num_classes'], start_filters=64).to(device)
+    elif(model == 'res_unet'):
+        network = ResUnet(channel=1).to(device)
+    elif(model == 'res_unet_plus'):
+        network = ResUnetPlusPlus(channel=1).to(device)
+        # network = build_resunetplusplus()
+    elif(model == 'unetplusplus'):
+        network = ResNet34UnetPlus(1,1).to(device)
+    elif(model == 'trans_unet'):
+        config_vit = CONFIGS_ViT_seg['R50-ViT-B_16']
+        config_vit['n_skip'] = 3
+        network = ViT_seg(config_vit, img_size=mydict['crop_size'], num_classes=1).cuda()
+    
+        
+    if mydict['checkpoint_restore'] != "":
+        network.load_state_dict(torch.load(mydict['checkpoint_restore']), strict=True)
+        print("loaded checkpoint! {}".format(mydict['checkpoint_restore']))
+    else:
+        print("No model found!")
+        sys.exit()
+
+
+    print("Let the inference begin!")
+    print("Todo: {}".format(len(test_generator)))
+
+    with torch.no_grad():
+        # 校准添加,测试阶段全部生成即可. 
+        scores = []
+        gt_masks = []
+        filenames = []
+        
+        network.eval()
+        test_iterator = iter(test_generator)
+        for _ in range(len(test_generator)):
+            x, y_gt, filename = next(test_iterator)
+            x = x.to(device, non_blocking=True)
+            y_gt = y_gt.to(device, non_blocking=True)
+
+            y_pred_logit = network(x)
+            y_pred = torch.sigmoid(y_pred_logit)
+            '''补齐:'''
+            np_gt = torch.squeeze(y_gt).detach().cpu().numpy()
+            np_pred = torch.squeeze(y_pred).detach().cpu().numpy()
+            
+            # 加到集合中, 用于校准集的数据
+            scores.append(np_pred)  # 将预测结果添加到 scores 列表中
+            gt_masks.append(np_gt)  # 将真实标签添加到 gt_masks 列表中
+            filenames.append(filename[0])  # 假设每个batch一个样本，取出文件名
+            
+            
+            #是否保存图像：
+            y_pred = RefineWithPrior().forward(y_pred)
+            filename = filename[0]
+
+            np_pred_result = np_pred.copy()
+            np_pred_result = np.where(np_pred_result >= 0.5, 1., 0.) # 0.5 thresholding
+            np_pred_result = (np_pred_result*255.).astype(np.uint8)
+            img_pred_result = Image.fromarray(np_pred_result)
+            img_pred_result.save(os.path.join(mydict['output_folder'], 'pred_' + filename + '.png'))
+
+        scores_array = np.array(scores)
+        np.save(os.path.join(mydict['output_folder'], 'train_scores.npy'), scores_array)
+        gt_masks_array = np.array(gt_masks)
+        np.save(os.path.join(mydict['output_folder'], 'train_gt_masks.npy'), gt_masks_array)
+        filenames_array = np.array(filenames)  # 新增：保存文件名
+        np.save(os.path.join(mydict['output_folder'], 'train_filenames.npy'), filenames_array)
+
+def test_2d_val(mydict):
+    device = torch.device("cuda")
+    print("CUDA device: {}".format(device))
+
+    if not torch.cuda.is_available():
+        print("WARNING!!! You are attempting to run training on a CPU (torch.cuda.is_available() is False). This can be VERY slow!")
+
+    # Test Data
+    dataset = mydict['dataset']
+    print("Dataset Name: {}".format(dataset))
+    if dataset == 'DRIVE':
+        test_set = DRIVE(mydict['test_datalist'], mydict['folders'], task="test")
+    elif(dataset == 'FIVE'):
+        test_set = FIVE("",
+                            ["/home/xkw/pxlames/segmentation/data/FIVE/val/images",
+                            "/home/xkw/pxlames/segmentation/data/FIVE/val/1st_manual"],
+                            task="test",
+                            crop_size=128)    
+
+    # 只读取前10个样本
+    # test_subset = torch.utils.data.Subset(test_set, range(30))
+    test_generator = torch.utils.data.DataLoader(test_set, batch_size=1, shuffle=False, num_workers=2, drop_last=False)
+
+    # Network
+    model = mydict['model']
+    if(model == 'unet'):
+        network = UNet(n_channels=3, n_classes=mydict['num_classes'], start_filters=64).to(device)
+    elif(model == 'res_unet'):
+        network = ResUnet(channel=1).to(device)
+    elif(model == 'res_unet_plus'):
+        network = ResUnetPlusPlus(channel=1).to(device)
+        # network = build_resunetplusplus()
+    elif(model == 'unetplusplus'):
+        network = ResNet34UnetPlus(1,1).to(device)
+    elif(model == 'trans_unet'):
+        config_vit = CONFIGS_ViT_seg['R50-ViT-B_16']
+        config_vit['n_skip'] = 3
+        network = ViT_seg(config_vit, img_size=mydict['crop_size'], num_classes=1).cuda()
+    
+        
+    if mydict['checkpoint_restore'] != "":
+        network.load_state_dict(torch.load(mydict['checkpoint_restore']), strict=True)
+        print("loaded checkpoint! {}".format(mydict['checkpoint_restore']))
+    else:
+        print("No model found!")
+        sys.exit()
+
+
+    print("Let the inference begin!")
+    print("Todo: {}".format(len(test_generator)))
+
+    with torch.no_grad():
+        # 校准添加,测试阶段全部生成即可. 
+        scores = []
+        gt_masks = []
+        filenames = []  
+        network.eval()
+        test_iterator = iter(test_generator)
+        for _ in range(len(test_generator)):
+            x, y_gt, filename = next(test_iterator)
+            x = x.to(device, non_blocking=True)
+            y_gt = y_gt.to(device, non_blocking=True)
+
+            y_pred_logit = network(x)
+            y_pred = torch.sigmoid(y_pred_logit)
+            '''补齐:'''
+            np_gt = torch.squeeze(y_gt).detach().cpu().numpy()
+            np_pred = torch.squeeze(y_pred).detach().cpu().numpy()
+            
+            # 加到集合中, 用于校准集的数据
+            scores.append(np_pred)  # 将预测结果添加到 scores 列表中
+            gt_masks.append(np_gt)  # 将真实标签添加到 gt_masks 列表中
+            filenames.append(filename[0])  # 假设每个batch一个样本，取出文件名
+            
+            #是否保存图像：
+            y_pred = RefineWithPrior().forward(y_pred)
+            filename = filename[0]
+
+            np_pred_result = np_pred.copy()
+            np_pred_result = np.where(np_pred_result >= 0.5, 1., 0.) # 0.5 thresholding
+            np_pred_result = (np_pred_result*255.).astype(np.uint8)
+            img_pred_result = Image.fromarray(np_pred_result)
+            img_pred_result.save(os.path.join(mydict['output_folder'], 'pred_' + filename + '.png'))
+
+        scores_array = np.array(scores)
+        np.save(os.path.join(mydict['output_folder'], 'val_scores.npy'), scores_array)
+        gt_masks_array = np.array(gt_masks)
+        np.save(os.path.join(mydict['output_folder'], 'val_gt_masks.npy'), gt_masks_array)
+        filenames_array = np.array(filenames)  # 新增：保存文件名
+        np.save(os.path.join(mydict['output_folder'], 'val_filenames.npy'), filenames_array)
 
 
 if __name__ == "__main__":
@@ -250,11 +479,15 @@ if __name__ == "__main__":
         print("Path to parameters file not provided. Exiting...")
 
     else:
-        args = parser.parse_args()
+        args = parser.parse_args()  
         task, mydict = parse_func(args)
 
     test_2d(mydict)
     print('测试完成')
     test_2d_cal(mydict)
     print('cal测试完成')
+    test_2d_train(mydict)
+    print('train测试完成')
+    test_2d_val(mydict)
+    print('val测试完成')
 

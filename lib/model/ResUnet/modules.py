@@ -1,6 +1,6 @@
 import torch.nn as nn
 import torch
-
+import torch.nn.functional as F
 
 class ResidualConv(nn.Module):
     def __init__(self, input_dim, output_dim, stride, padding):
@@ -135,6 +135,18 @@ class AttentionBlock(nn.Module):
         )
 
     def forward(self, x1, x2):
-        out = self.conv_encoder(x1) + self.conv_decoder(x2)
-        out = self.conv_attn(out)
-        return out * x2
+        encoder_output = self.conv_encoder(x1)
+        decoder_output = self.conv_decoder(x2)
+        
+        # 确保两个特征图尺寸相同，以较小的尺寸为准
+        if encoder_output.shape[2:] != decoder_output.shape[2:]:
+            # 选择尺寸较小的特征图作为目标尺寸
+            target_size = (
+                min(encoder_output.shape[2], decoder_output.shape[2]),
+                min(encoder_output.shape[3], decoder_output.shape[3])
+            )
+            encoder_output = F.interpolate(encoder_output, size=target_size, mode='bilinear', align_corners=True)
+            decoder_output = F.interpolate(decoder_output, size=target_size, mode='bilinear', align_corners=True)
+        
+        out = encoder_output + decoder_output
+        return out

@@ -1,6 +1,7 @@
 *npy
 model_epoch*
-__pycache__/*
+__pycache__/
+*.pyc
 wandb
 
 # Virtual environment
@@ -13,8 +14,9 @@ env/
 *.log
 *.tmp
 
-# data & outout
+# data & output
 data/
+outputs/
 inference-output/
 train-log/
 

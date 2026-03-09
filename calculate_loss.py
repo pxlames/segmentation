@@ -74,12 +74,13 @@ class LossCalculator:
         self.skeleton_loss = SkeletonLoss()
         self.soft_dice_cldice_loss = soft_dice_cldice(iter_=50, alpha=0.5, smooth=1.)
         self.topo_loss_func = TopoLossMSE2D(0.0001, 73)
+        self.soft_iou_loss = soft_iou_loss()
 
         # 初始化损失历史记录
         self.loss_history = {loss_type: [] for loss_type in self.loss_types}
         self.loss_history['total'] = []
 
-    def compute_loss(self, pred, target, patch_lvs, epoch=0):
+    def compute_loss(self, pred, target, patch_lvs, epoch=0, certain_mask = None, uncertain_mask = None):
         """计算损失值
         
         Args:
@@ -97,13 +98,14 @@ class LossCalculator:
             if loss_type == 'ce':
                 criterion = nn.CrossEntropyLoss()
                 loss = criterion(pred, target)
-                
+            elif loss_type == 'my':
+                loss = self.my_refine_loss(pred, target, certain_mask, uncertain_mask)
             elif loss_type == 'dice':
                 loss = 1 - torch_dice_fn_bce(pred, target)
-                
+            
             elif loss_type == 'focal':
                 loss = self.focal_loss(pred, target)
-                
+            
             elif loss_type == 'bce':
                 criterion = nn.BCELoss()
                 loss = criterion(pred, target)
@@ -113,19 +115,20 @@ class LossCalculator:
             
             elif loss_type == 'cldice':
                 loss = self.soft_dice_cldice_loss(pred, target)
-             
+            
             elif loss_type == 'PD':
                 loss = self.topo_loss_func(pred, target)
-                
+            
             elif loss_type == 'smooth':
                 # start_time = time()
                 loss = self.smoothness_loss(pred, target, epoch)
                 # end_time = time()
                 # print(f'Smoothness loss计算时间: {end_time - start_time:.4f}秒')
-                    
+            
             elif loss_type == 'ls_recall':
                 loss = self.ls_recall_loss(patch_lvs, target, pred, threshold=0.2)
-                
+            elif loss_type == 'soft_iou_loss':
+                loss = self.soft_iou_loss(pred,target)
             else:
                 raise ValueError(f'不支持的损失函数类型: {loss_type}')
             
@@ -134,7 +137,7 @@ class LossCalculator:
                 loss = torch.tensor([loss], device=pred.device)
             elif loss.dim() == 0:  # 如果是标量tensor,转换为1维
                 loss = loss.unsqueeze(0)
-                
+            
             loss_dict[loss_type] = {'value': loss.item(), 'weight': weight}
             total_loss += weight * loss
             
@@ -178,7 +181,16 @@ class LossCalculator:
         save_path = os.path.join(save_dir, 'loss_history.png')
         plt.savefig(save_path)
         plt.close()
-        
+    # +++++=+++++++创新+++++++++++++++++
+    def my_refine_loss(self, pred, target, certain_mask = None, uncertain_mask = None):
+        criterion = nn.BCELoss()
+        # pred = certain_mask +  pred * uncertain_mask
+        # 使用确定区域和不确定区域mask来组合最终结果
+        # pred = certain_mask + (1 - certain_mask) * pred * uncertain_mask
+        # pred = certain_mask + (1 - certain_mask) * pred
+        loss_dice = 1 - torch_dice_fn_bce(pred, target)
+        loss = criterion(pred, target)
+        return loss + loss_dice
     def focal_loss(self, pred, target, alpha=0.25, gamma=2.0):
         """计算Focal Loss
         
@@ -311,7 +323,17 @@ class LossCalculator:
 
         return 1 - recall.item()
 
+class soft_iou_loss(nn.Module):
+    def __init__(self):
+        super(soft_iou_loss, self).__init__()
 
+    def forward(self, pred, label):
+        b = pred.size()[0]
+        pred = pred.view(b, -1)
+        label = label.view(b, -1)
+        inter = torch.sum(torch.mul(pred, label), dim=-1, keepdim=False)
+        unit = torch.sum(torch.mul(pred, pred) + label, dim=-1, keepdim=False) - inter
+        return torch.mean(1 - inter / (unit + 1e-10))
 # if __name__ == '__main__':
     
 #         # 创建损失计算器实例
